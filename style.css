@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
 :root {
     --primary : #aa0505; 
     --secondary : #fbca03;
-
-
+    --font-family-title: 'Lobster', cursive;
+    --font-family-text: 'Roboto', sans-serif;
 
 }
