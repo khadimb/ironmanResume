@@ -13,3 +13,83 @@
     --font-size-text: 16pt;
 
 }
+
+nav {
+    width: 100%;
+    background-color: var(--primaryRed);
+    display: flex;
+    justify-content: space-between;
+}
+.items {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+.logo {
+    width: 25%;
+    
+}
+
+.container{
+    color: var(--light);
+    font-family: var(--font-family-text);
+    height: 640px;
+    display: flex;
+    justify-content: center;
+}
+
+.background-tony {
+    height: 640px;
+    width: 750px;
+}
+
+.background-iron {
+    height: 640px;
+    width: 500px;
+}
+
+.tony-background {
+    width: 27.5%;
+}
+
+.contact-ironman {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--light);
+    border: 2px black solid;
+    width: 45%;
+    background-color: var(--primaryRed);
+
+}
+
+.ironman-background {
+    width: 27.5%;
+}
+
+.tony-stark-or-ironman {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tony{
+    display: inline;
+}
+
+#message {
+    width: 70%;
+    height: 250px;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    height: 70px;
+}
+
+

@@ -7,45 +7,61 @@
     <title>IronMan Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
+
     <header>
         <nav>
-         <ul>
-          <li>
+         <div class = "logo ironman">
             <img
               src="iron man .png"
               alt="Logo d'IronMan"
               class="logo"
             />
-          </li>
-         </ul>
-        <div class="nav-title">
-            Tony Stark / Iron Man Resumé
         </div>
         <div class="items" id="items">
             <a href="">About Me</a>
             <a href="">My Experiences</a>
             <a href="">My Skills</a>
-            <a href="">Contact Me</a>
+            <a href="contact.html">Contact Me</a>
             <a class="close" href="#close">X</a>
         </div>
         <a class="burger" href="#items">MENU</a>
         </nav>
     </header>
+
+
+
 <body>
+
     <h1>Contact me</h1>
+
     
     <div class = "container">
+        <div class = "tony-background">
+            <img
+              src="tony-stark.jpg"
+              alt="background tony stark"
+              class="background-tony"
+            />
+        </div>
         <form class ="contact-ironman">
-            <fieldset class = "tony-stak-or-ironman">
+            <div class = "choose-your-guy">
+            <fieldset class = "tony-stark-or-ironman">
                 <legend>Choose your guy!</legend>
 
+                <div class = "tony">
                 <input id = "tony-stark" name = "choose" type = "radio" value = "tony stark"/>
                 <label for = "tony-stark" class = "radio-label">Tony Stark</label>
+                </div>
 
+                <div class = "iron">
                 <input id = "ironman" name = "choose" type = "radio" value = "iron man"/>
                 <label for = "ironman" class = "radio-label">Iron Man</label>
-
+                </div>
             </fieldset>
+            </div>
+            
         <div class = "first-name">
             <label for = "first-name">First-name</label>
             <input id ="first-name" name = "first-name" type = "text"/>
@@ -56,17 +72,24 @@
             </div>
             <div class = "email">
                 <label for = "email">Your Email</label>
-                <input id ="contact-me" name = "contact-me" type = "text"/>
+                <input id ="email" name = "contact-me" type = "text"/>
             </div>
             <div class ="message">
-                <label for = "message">Your Message</label>
+                <label for = "message" class = "your-message">Your Message</label>
                 <input id ="message" name = "message" type = "text"/>
             </div>
-            <div class = "Submit">
+            <div class = "submit">
                 <button>Submit</button>
                 <button>Print the cv</button>
             </div>
             </form>
+            <div class = "ironman-background">
+                <img
+              src="iron man infinity stone.jpg"
+              alt="background iron man"
+              class="background-iron"
+            />
+            </div>
     </div>
    
     
