@@ -14,6 +14,7 @@
     
 }
 
+
 ul{
     list-style-type : square;
 }
@@ -28,3 +29,81 @@ h3{
 figure{
     display: inline-block;
 }
+.gifironman{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+header {
+    background-color: var(--secondaryYellow);
+}
+* {
+    margin: 0px;
+}
+footer {
+    background-color: var(--primaryYellow);
+
+}
+body {
+    background-color: var(--secondaryRed);
+    color : var(--light);
+
+}
+.Experiences {
+    font-style: var(--font-family-text);
+    color: var(--light);
+    padding: 20px;
+}
+.logo {
+    height: 50px;
+    object-position: left top;
+    
+}
+
+.ExperiencesIronMan {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: var(--font-size-text);
+}
+
+.ExperiencesTonyStark {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: var(--font-size-text);
+}
+
+.Border {
+    margin: 80px;
+}
+
+h1 {
+    font-family: var(--font-family-title);
+    font-size: 38pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
+h2 {
+    font-family: var(--font-family-title);
+    font-size: 28pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.GIFsnap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:500px)
