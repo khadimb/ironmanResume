@@ -10,6 +10,21 @@
     --secondaryRed: #4b0908;
     --secondaryYellow: #b97d10;
     --spacing: 8px;
-    --font-size-text: 16pt;
+    --font-size-text: 14pt;
+    
+}
 
+ul{
+    list-style-type : square;
+}
+h3{
+    font-size: 20pt;
+    font-family: var(--font-family-title);
+}
+
+.flag{ 
+    width: 80px;
+}
+figure{
+    display: inline-block;
 }
