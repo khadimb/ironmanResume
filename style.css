@@ -21,6 +21,7 @@ header {
 }
 footer {
     background-color: var(--primaryYellow);
+    border-top: solid var(--dark) 5px;
 }
 body {
     background-color: var(--secondaryRed);
@@ -29,8 +30,8 @@ body {
 .Experiences {
     font-style: var(--font-family-text);
     color: var(--light);
-    padding: 20px;
 }
+
 .logo {
     height: 50px;
     object-position: left top;
@@ -81,5 +82,8 @@ h2 {
     margin-top: 20px;
 }
 
+.snap {
+    width: 100%;
+}
+
 @media screen and (max-width:500px);
-   
