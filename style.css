@@ -13,3 +13,18 @@
     --font-size-text: 16pt;
 
 }
+
+body{
+    background-color: var(--light);
+}
+
+h1{
+    font-family: var(--font-family-title);
+    font-size: 38pt;
+
+}
+
+h2{
+    font-family: var(--font-family-title);
+    font-size: 28pt;
+}
