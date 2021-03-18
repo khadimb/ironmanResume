@@ -35,7 +35,7 @@ h2 {
 }
 
 footer {
-    background-color: var(--primaryYellow);
+    background-color: var(--secondaryYellow);
     border-top: solid var(--dark) 5px;
 }
 body {
@@ -113,9 +113,8 @@ span {
 }
 
 .bulle {
-    background: ;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     background-color: var(--secondaryYellow);
     border-radius: 50%;
     border: 5px solid var(--dark);
@@ -128,6 +127,11 @@ span {
     font-weight: bold;
     overflow: hidden;
 }
+ .bulle p {
+    font-family: var(--font-family-text);
+    font-weight: bold;
+    font-style: normal;
+ }
 
 .bulle:hover .TonyStarkExp {
     left: 10vw;
