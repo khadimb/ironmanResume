@@ -14,17 +14,107 @@
 
 }
 
-body{
+
+
+
+.skills {
+    margin-bottom: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#principalSkills {
+    padding: 60px;
     background-color: var(--light);
 }
 
-h1{
+#principalSkills h1.title {
+    margin-bottom: 50px;
+}
+
+h1 {
     font-family: var(--font-family-title);
+    text-transform: uppercase;
     font-size: 38pt;
 
 }
 
-h2{
+div {
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+h2 {
     font-family: var(--font-family-title);
     font-size: 28pt;
+}
+
+.skill-unique {
+    width: 100%;
+    display: table;
+    margin-bottom: 25px;
+}
+
+.skill-title {
+    width: 60%;
+    float: left;
+    color: var(--dark);
+}
+
+.progress {
+    width: 100%;
+    margin-top: .3rem;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: var(--light);
+    border-radius: .25rem;
+}
+
+element.style {
+    width: 100%;
+}
+.red-bg {
+    background-color: var(--secondaryRed)!important;
+}
+
+.red-color {
+    color: var(--secondaryRed);
+}
+
+.yellow-bg {
+    background-color: var(--secondaryYellow)!important;
+}
+
+.yellow-color {
+    color: var(--secondaryYellow);
+}
+
+.darkblue-bg {
+    background-color: #3f51b5!important;
+}
+.darkblue-color {
+    color: #3f51b5;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--light);
+    text-align: center;
+    white-space: nowrap;
+    transition: width .6s  ease;
+}
+
+body {
+    background-color: var(--light);
 }
