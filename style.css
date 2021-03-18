@@ -21,13 +21,16 @@
     margin-bottom: 50px;
 }
 
+.skillsProgress {
+    margin: var(--spacing);
+}
 * {
+    margin: 0px;
     box-sizing: border-box;
 }
 
 #principalSkills {
     padding: 60px;
-    background-color: var(--light);
 }
 
 #principalSkills h1.title {
@@ -36,13 +39,19 @@
 
 h1 {
     font-family: var(--font-family-title);
-    text-transform: uppercase;
     font-size: 38pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
 
+}
+h1.title {
+    text-transform: uppercase;
+    color: var(--light);
 }
 
 div {
     display: block;
+    
 }
 
 .row {
@@ -50,27 +59,34 @@ div {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    justify-content: space-around;
 }
 
 h2 {
     font-family: var(--font-family-title);
     font-size: 28pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+    color: var(--light);
 }
 
 .skill-unique {
     width: 100%;
-    display: table;
+    display: grid;
     margin-bottom: 25px;
+    padding: 20px;
 }
 
 .skill-title {
-    width: 60%;
+    width: auto;
     float: left;
-    color: var(--dark);
+    color: var(--light);
+    font-size: 20pt;
+    font-family: var(--font-family-text);
 }
 
 .progress {
-    width: 100%;
+    width: 700px;
     margin-top: .3rem;
     display: flex;
     height: 1rem;
@@ -84,11 +100,11 @@ element.style {
     width: 100%;
 }
 .red-bg {
-    background-color: var(--secondaryRed)!important;
+    background-color: var(--primaryRed)!important;
 }
 
 .red-color {
-    color: var(--secondaryRed);
+    color: var(--primaryRed);
 }
 
 .yellow-bg {
@@ -116,5 +132,10 @@ element.style {
 }
 
 body {
-    background-color: var(--light);
+    background-color: var(--secondaryRed);
+}
+
+footer {
+    background-color: var(--primaryYellow);
+    border-top: solid var(--dark) 5px;
 }
