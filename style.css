@@ -19,6 +19,21 @@ header {
 * {
     margin: 0px;
 }
+
+h1 {
+    font-family: var(--font-family-title);
+    font-size: 38pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
+h2 {
+    font-family: var(--font-family-title);
+    font-size: 28pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
 footer {
     background-color: var(--primaryYellow);
     border-top: solid var(--dark) 5px;
@@ -27,6 +42,21 @@ body {
     background-color: var(--secondaryRed);
 
 }
+
+span {
+    display: bloc;
+    position: absolute;
+    left: -1000%;
+    padding: 3px;
+    color: var(--dark);
+    background-color: var(--light);
+    border: solid var(--dark) 4px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: var(--font-family-text);
+    font-size: 20pt;
+}
+
 .Experiences {
     font-style: var(--font-family-text);
     color: var(--light);
@@ -56,19 +86,7 @@ body {
     margin: 80px;
 }
 
-h1 {
-    font-family: var(--font-family-title);
-    font-size: 38pt;
-    text-shadow: #030000 2px 5px;
-    margin: var(--spacing);
-}
 
-h2 {
-    font-family: var(--font-family-title);
-    font-size: 28pt;
-    text-shadow: #030000 2px 5px;
-    margin: var(--spacing);
-}
 
 .items {
     display: flex;
@@ -79,11 +97,68 @@ h2 {
 .GIFsnap {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .snap {
     width: 100%;
 }
 
-@media screen and (max-width:500px);
+.cercledate {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bulle {
+    background: ;
+    height: 100px;
+    width: 100px;
+    background-color: var(--secondaryYellow);
+    border-radius: 50%;
+    border: 5px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-size: 17pt;
+    font-style: oblique;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.bulle:hover .TonyStarkExp {
+    left: 10vw;
+    right: 60vw;
+}
+
+/**.bulleDroite {
+    height: 100px;
+    width: 100px;
+    background-color: var(--secondaryYellow);
+    border-radius: 50%;
+    border: 5px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-size: 17pt;
+    font-style: oblique;
+    font-weight: bold;
+    overflow: hidden;
+}**/
+
+.bulle:hover .IronManExp {
+    left: 60vw;
+    right: 10vw;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:500px)
