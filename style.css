@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
 
 :root {
-    --primaryRed : #aa0505; 
+    --primaryRed : #aa0505;  
     --primaryYellow : #fbca03;
     --font-family-title: 'Lobster', cursive;
     --font-family-text: 'Roboto', sans-serif;
     --dark : #030000;
-    --light : #fcfbf7;
+    --light : #fcfbf7; 
     --secondaryRed: #4b0908;
     --secondaryYellow: #b97d10;
     --spacing: 8px;
@@ -14,73 +14,53 @@
 
 }
 
-nav {
-    width: 100%;
-    background-color: var(--primaryRed);
-    display: flex;
-    justify-content: space-between;
-}
-.items {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-}
-
-
-.logo {
-    width: 25%;
-    
-}
 
 .container{
+    padding-top: 16px;
     color: var(--light);
     font-family: var(--font-family-text);
     height: 640px;
     display: flex;
-    justify-content: center;
-}
-
-.background-tony {
-    height: 640px;
-    width: 750px;
-}
-
-.background-iron {
-    height: 640px;
-    width: 500px;
+    justify-content: space-around
 }
 
 .tony-background {
-    width: 27.5%;
+    border-radius: 3px;
+    width: 866.6px;
+}
+.background-tony {
+    width: 866.6px;
+    height: 640px;
+     object-fit: cover;
+     object-position: top;
+     border-radius: 3px;
 }
 
 .contact-ironman {
+    border-radius: 3px;
+    background-color: var(--light);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--light);
-    border: 2px black solid;
     width: 45%;
-    background-color: var(--primaryRed);
-
-}
-
-.ironman-background {
-    width: 27.5%;
+    padding-left: 8px;
 }
 
 .tony-stark-or-ironman {
     display: flex;
     justify-content: space-between;
+    color: var(--dark);
+    margin-right: 5px;
 }
 
-.tony{
-    display: inline;
-}
-
-#message {
-    width: 70%;
-    height: 250px;
+.formular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 98%;
+    height: 600px;
+    padding-left: 8px;
+    color: var(--dark);
 }
 
 .submit {
@@ -88,8 +68,37 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
     height: 70px;
 }
 
 
+
+
+* {
+    margin: 0px;
+}
+
+h1 {
+    color: var(--light);
+    padding: 36px;
+    font-family: var(--font-family-title);
+    font-size: 38pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
+h2 {
+    font-family: var(--font-family-title);
+    font-size: 28pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
+footer {
+    background-color: var(--primaryYellow);
+    border-top: solid var(--dark) 5px;
+}
+body {
+    background-color: var(--secondaryRed);
+
+}

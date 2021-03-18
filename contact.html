@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IronMan Resume</title>
+    <title>Iron Man Résumé</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-
-
     <header>
         <nav>
-         <div class = "logo ironman">
+         <ul>
+          <li>
             <img
               src="iron man .png"
-              alt="Logo d'IronMan"
+              alt="Logo d'Iron Man"
               class="logo"
             />
+          </li>
+         </ul>
+        <div class="nav-title">
+            Tony Stark / Iron Man Résumé
         </div>
         <div class="items" id="items">
             <a href="">About Me</a>
             <a href="">My Experiences</a>
             <a href="">My Skills</a>
-            <a href="contact.html">Contact Me</a>
+            <a href="">Contact Me</a>
             <a class="close" href="#close">X</a>
         </div>
         <a class="burger" href="#items">MENU</a>
         </nav>
     </header>
-
 
 
 <body>
@@ -40,7 +41,7 @@
     <div class = "container">
         <div class = "tony-background">
             <img
-              src="tony-stark.jpg"
+              src="tony-and-ironman.jpg"
               alt="background tony stark"
               class="background-tony"
             />
@@ -61,35 +62,28 @@
                 </div>
             </fieldset>
             </div>
+            <div class = "formular"> 
+        
+             <label for = "first-name">First-name</label>
+                <input id ="first-name" name = "first-name" type = "text" style = "width: 250px;"/>
+        
             
-        <div class = "first-name">
-            <label for = "first-name">First-name</label>
-            <input id ="first-name" name = "first-name" type = "text"/>
-        </div>
-            <div class = "last-name">
-                <label for = "last-name">Last-ame</label>
-                <input id ="last-name" name = "last-name" type = "text"/>
-            </div>
-            <div class = "email">
-                <label for = "email">Your Email</label>
-                <input id ="email" name = "contact-me" type = "text"/>
-            </div>
-            <div class ="message">
-                <label for = "message" class = "your-message">Your Message</label>
-                <input id ="message" name = "message" type = "text"/>
-            </div>
+            <label for = "last-name">Last-name</label>
+                <input id ="last-name" name = "last-name" type = "text" style = "width: 250px;"/>
+            
+            <label for = "email">Your Email</label>
+                <input id ="email" name = "email" type = "text" style = "width: 450px;"/>
+            
+            
+            <label for = "message" class = "your-message">Your Message</label>
+                <input id ="message" name = "message" type = "text" style = "height: 250px;"/>
+            
             <div class = "submit">
                 <button>Submit</button>
-                <button>Print the cv</button>
+                <button>Print the resume</button>
             </div>
+        </div>
             </form>
-            <div class = "ironman-background">
-                <img
-              src="iron man infinity stone.jpg"
-              alt="background iron man"
-              class="background-iron"
-            />
-            </div>
     </div>
    
     
