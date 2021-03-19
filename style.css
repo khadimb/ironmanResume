@@ -10,10 +10,170 @@
     --secondaryRed: #4b0908;
     --secondaryYellow: #b97d10;
     --spacing: 8px;
-    --font-size-text: 16pt;
+    --font-size-text: 14pt;
+  
+
+* {
+    margin: 0px;
+}
+
+h1 {
+    font-family: var(--font-family-title);
+    font-size: 38pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
+h2 {
+    font-family: var(--font-family-title);
+    font-size: 28pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
+footer {
+    background-color: var(--secondaryYellow);
+    border-top: solid var(--dark) 5px;
+}
+
+span {
+    display: bloc;
+    position: absolute;
+    left: -1000%;
+    padding: 3px;
+    color: var(--dark);
+    background-color: var(--light);
+    border: solid var(--dark) 4px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: var(--font-family-text);
+    font-size: 20pt;
+}
+
+.Experiences {
+    font-style: var(--font-family-text);
+    color: var(--light);
+}
+
+.logo {
+    height: 50px;
+    object-position: left top;
 
 }
 
+
+.ironmanindex{
+    max-width: 100%;
+    max-height: 100%;
+}
+.tabHobbies{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+
+.hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    width: 150px;
+    background:var(--light);
+    color: var(--secondaryRed);
+    height:150px;
+    text-align:center;
+    font-style: var(--font-family-text);
+    border-radius: 150px;
+    box-shadow: 3px 3px 3px var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+
+#mechanical:hover{
+    color: var(--light);
+    background-color: var(--dark);
+    box-shadow: 3px 3px 3px var(--light);
+}
+    
+
+h3{
+    font-size: 20pt;
+    font-family: var(--font-family-title);
+
+}
+.pageTitle { 
+    padding: 10px;
+}
+.boxTitle{
+    text-align: center;
+    padding: 8px;
+    text-shadow: #030000 2px 5px;
+}
+
+.boxTab{
+    width: 50%;
+    border: solid var(--light) 10px;
+    padding: 5px;
+    background-color: var(--light);
+    margin: 8px;
+    color: var(--secondaryRed);
+    box-shadow: 3px 3px 3px var(--dark);
+    margin-left: auto;
+    margin-right: auto ;
+    border-radius: 3px;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    font-style: oblique;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.address{
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondaryRed);
+    padding: 2px;
+}
+.flag{ 
+    width: 8vw;
+    height: 10vh;
+}
+.flagname{
+    display: flex;
+    justify-content: center;
+}
+figure{
+    display: inline-block;
+}
+.gifironman{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: solid var(--dark) 5px;
+}
+
+header {
+    background-color: var(--secondaryYellow);
+    display: flex;
+    border-bottom: solid var(--dark) 5px;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+body {
+    background-color: var(--secondaryRed);
+    color : var(--light);
+
+}
 
 .container{
     padding-top: 16px;
@@ -72,19 +232,240 @@
 }
 
 
+.Experiences {
+    font-style: var(--font-family-text);
+    color: var(--light);
+    padding: 20px;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    object-position: left top;
+    margin-left: 10px;
+    margin-top: 5px;
+    top: 0;
+
+    
+}
+
+.ExperiencesIronMan {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: var(--font-size-text);
+}
+
+.ExperiencesTonyStark {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: var(--font-size-text);
+}
+
+.Border {
+    margin: 80px;
+}
 
 
+
+
+.GIFsnap {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.snap {
+    width: 100%;
+}
+
+.cercledate {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bulle {
+    height: 80px;
+    width: 80px;
+    background-color: var(--secondaryYellow);
+    border-radius: 50%;
+    border: 5px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-size: 17pt;
+    font-style: oblique;
+    font-weight: bold;
+    overflow: hidden;
+}
+ .bulle p {
+    font-family: var(--font-family-text);
+    font-weight: bold;
+    font-style: normal;
+ }
+
+.bulle:hover .TonyStarkExp {
+    left: 10vw;
+    right: 60vw;
+}
+
+/**.bulleDroite {
+    height: 100px;
+    width: 100px;
+    background-color: var(--secondaryYellow);
+    border-radius: 50%;
+    border: 5px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-size: 17pt;
+    font-style: oblique;
+    font-weight: bold;
+    overflow: hidden;
+}**/
+
+.bulle:hover .IronManExp {
+    left: 60vw;
+    right: 10vw;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navitems {
+    display: flex;
+    
+    justify-content: right;
+    align-items: flex-end;
+    padding-left: 150px;
+    margin-top: 0px;
+    margin-left: 200px;
+}
+nav{ 
+    display: flex;
+    
+    justify-content: flex-end;
+    padding: 1px;
+}
+
+.aboutmeBar{
+    padding: 5px;
+    text-decoration: none;
+    border-right: 1px solid var(--dark);
+    color: var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.experiencesBar{
+    padding: 5px;
+    border-right: 1px solid var(--dark);
+    text-decoration: none;
+    color: var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+.skillsBar:hover{
+    background-color: var(--secondaryRed);
+    color: var(--light);
+}
+.skillsBar{
+    padding: 5px;
+    border-right: 1px solid var(--dark);
+    text-decoration: none;
+    color: var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+.contactBar{
+    padding: 5px;  
+    border-right: 1px solid var(--dark);
+    text-decoration: none;
+    color: var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+.firstquote{
+    font-size: 50px;
+    color: var(--dark);
+    font-family: var(--font-family-title);
+    text-shadow: var(--light) 2px 3px;
+    margin-left: 20px;  
+    text-decoration: none;
+}
+.items {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+@media screen and (max-width:500px){
+    #items {
+        display: none;
+    }
+    .flag{
+        display: flex;
+    }
+
+}
+
+
+.skills {
+    margin-bottom: 50px;
+}
+
+.skillsProgress {
+    margin: var(--spacing);
+}
 * {
     margin: 0px;
+    box-sizing: border-box;
+}
+
+#principalSkills {
+    padding: 60px;
+}
+
+#principalSkills h1.title {
+    margin-bottom: 50px;
 }
 
 h1 {
-    color: var(--light);
-    padding: 36px;
     font-family: var(--font-family-title);
     font-size: 38pt;
     text-shadow: #030000 2px 5px;
     margin: var(--spacing);
+
+}
+h1.title {
+    text-transform: uppercase;
+    color: var(--light);
+}
+
+div {
+    display: block;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-around;
 }
 
 h2 {
@@ -92,13 +473,55 @@ h2 {
     font-size: 28pt;
     text-shadow: #030000 2px 5px;
     margin: var(--spacing);
+    color: var(--light);
 }
 
-footer {
-    background-color: var(--primaryYellow);
-    border-top: solid var(--dark) 5px;
+.skill-unique {
+    width: 100%;
+    display: grid;
+    margin-bottom: 25px;
+    padding: 20px;
 }
-body {
-    background-color: var(--secondaryRed);
 
+.skill-title {
+    width: auto;
+    float: left;
+    color: var(--light);
+    font-size: 20pt;
+    font-family: var(--font-family-text);
+    padding: 8px;
 }
+
+.progress {
+    width: 700px;
+    margin-top: .3rem;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: var(--light);
+    border-radius: .25rem;
+}
+
+element.style {
+    width: 100%;
+}
+
+.yellow-bg {
+    background-color: var(--secondaryYellow)!important;
+}
+
+.yellow-color {
+    color: var(--secondaryYellow);
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--light);
+    text-align: center;
+    white-space: nowrap;
+    transition: width .6s  ease;
+}
+
