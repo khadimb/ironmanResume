@@ -1,15 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
 
 :root {
-    --primaryRed : #aa0505; 
+    --primaryRed : #aa0505;  
     --primaryYellow : #fbca03;
     --font-family-title: 'Lobster', cursive;
     --font-family-text: 'Roboto', sans-serif;
     --dark : #030000;
-    --light : #fcfbf7;
+    --light : #fcfbf7; 
     --secondaryRed: #4b0908;
     --secondaryYellow: #b97d10;
     --spacing: 8px;
     --font-size-text: 16pt;
+
+}
+
+
+.container{
+    padding-top: 16px;
+    color: var(--light);
+    font-family: var(--font-family-text);
+    height: 640px;
+    display: flex;
+    justify-content: space-around
+}
+
+.tony-background {
+    border-radius: 3px;
+    width: 866.6px;
+}
+.background-tony {
+    width: 866.6px;
+    height: 640px;
+     object-fit: cover;
+     object-position: top;
+     border-radius: 3px;
+}
+
+.contact-ironman {
+    border-radius: 3px;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    padding-left: 8px;
+}
+
+.tony-stark-or-ironman {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark);
+    margin-right: 5px;
+}
+
+.formular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 98%;
+    height: 600px;
+    padding-left: 8px;
+    color: var(--dark);
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+
+
+
+* {
+    margin: 0px;
+}
+
+h1 {
+    color: var(--light);
+    padding: 36px;
+    font-family: var(--font-family-title);
+    font-size: 38pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
+h2 {
+    font-family: var(--font-family-title);
+    font-size: 28pt;
+    text-shadow: #030000 2px 5px;
+    margin: var(--spacing);
+}
+
+footer {
+    background-color: var(--primaryYellow);
+    border-top: solid var(--dark) 5px;
+}
+body {
+    background-color: var(--secondaryRed);
 
 }
