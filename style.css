@@ -99,13 +99,6 @@ h2 {
 element.style {
     width: 100%;
 }
-.red-bg {
-    background-color: var(--primaryRed)!important;
-}
-
-.red-color {
-    color: var(--primaryRed);
-}
 
 .yellow-bg {
     background-color: var(--secondaryYellow)!important;
@@ -115,12 +108,6 @@ element.style {
     color: var(--secondaryYellow);
 }
 
-.darkblue-bg {
-    background-color: #3f51b5!important;
-}
-.darkblue-color {
-    color: #3f51b5;
-}
 .progress-bar {
     display: flex;
     flex-direction: column;
@@ -135,7 +122,3 @@ body {
     background-color: var(--secondaryRed);
 }
 
-footer {
-    background-color: var(--primaryYellow);
-    border-top: solid var(--dark) 5px;
-}
