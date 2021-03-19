@@ -83,6 +83,7 @@ h2 {
     color: var(--light);
     font-size: 20pt;
     font-family: var(--font-family-text);
+    padding: 8px;
 }
 
 .progress {
