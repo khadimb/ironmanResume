@@ -341,7 +341,7 @@ body {
     justify-content: space-around;
 }
 
-.items {
+.navitems {
     display: flex;
     
     justify-content: right;
@@ -406,7 +406,11 @@ nav{
     margin-left: 20px;  
     text-decoration: none;
 }
-
+.items {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
 
 @media screen and (max-width:500px){
     #items {
