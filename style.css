@@ -14,7 +14,9 @@
 
 }
 
-
+body {
+    background-color: var(--secondaryRed);
+}
 
 
 .skills {
@@ -107,19 +109,17 @@ element.style {
 
 .yellow-color {
     color: var(--secondaryYellow);
-}
+}   
 
-.progress-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--light);
-    text-align: center;
-    white-space: nowrap;
-    transition: width .6s  ease;
-}
+.progress-bar .yellow-bg .animateProgressbar {
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    
 
-body {
-    background-color: var(--secondaryRed);
-}
 
+}
