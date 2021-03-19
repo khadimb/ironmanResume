@@ -10,10 +10,131 @@
     --secondaryRed: #4b0908;
     --secondaryYellow: #b97d10;
     --spacing: 8px;
-    --font-size-text: 16pt;
-
+    --font-size-text: 14pt;
+    
+}
+body{
+    font-family: var(--font-family-text)
 }
 
+.ironmanindex{
+    max-width: 100%;
+    max-height: 100%;
+}
+.tabHobbies{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+
+.hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    width: 150px;
+    background:var(--light);
+    color: var(--secondaryRed);
+    height:150px;
+    text-align:center;
+    font-style: var(--font-family-text);
+    border-radius: 150px;
+    box-shadow: 3px 3px 3px var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+
+#mechanical:hover{
+    color: var(--light);
+    background-color: var(--dark);
+    box-shadow: 3px 3px 3px var(--light);
+}
+    
+
+h3{
+    font-size: 20pt;
+    font-family: var(--font-family-title);
+
+}
+.pageTitle { 
+    padding: 10px;
+}
+.boxTitle{
+    text-align: center;
+    padding: 8px;
+    text-shadow: #030000 2px 5px;
+}
+
+.boxTab{
+    width: 50%;
+    border: solid var(--light) 10px;
+    padding: 5px;
+    background-color: var(--light);
+    margin: 8px;
+    color: var(--secondaryRed);
+    box-shadow: 3px 3px 3px var(--dark);
+    margin-left: auto;
+    margin-right: auto ;
+    border-radius: 3px;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    font-style: oblique;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.address{
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondaryRed);
+    padding: 2px;
+}
+.flag{ 
+    width: 8vw;
+    height: 10vh;
+}
+.flagname{
+    display: flex;
+    justify-content: center;
+}
+figure{
+    display: inline-block;
+}
+.gifironman{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: solid var(--dark) 5px;
+}
+
+header {
+    background-color: var(--secondaryYellow);
+    display: flex;
+    border-bottom: solid var(--dark) 5px;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+* {
+    margin: 0px;
+}
+footer {
+    background-color: var(--secondaryYellow);
+    border-top: solid var(--dark) 5px;
+}
+
+body {
+    background-color: var(--secondaryRed);
+    color : var(--light);
+
+}
 
 .container{
     padding-top: 16px;
@@ -72,15 +193,41 @@
 }
 
 
+.Experiences {
+    font-style: var(--font-family-text);
+    color: var(--light);
+    padding: 20px;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    object-position: left top;
+    margin-left: 10px;
+    margin-top: 5px;
+    top: 0;
+    
+}
 
+.ExperiencesIronMan {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: var(--font-size-text);
+}
 
-* {
-    margin: 0px;
+.ExperiencesTonyStark {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: var(--font-size-text);
+}
+
+.Border {
+    margin: 80px;
 }
 
 h1 {
-    color: var(--light);
-    padding: 36px;
     font-family: var(--font-family-title);
     font-size: 38pt;
     text-shadow: #030000 2px 5px;
@@ -94,11 +241,83 @@ h2 {
     margin: var(--spacing);
 }
 
-footer {
-    background-color: var(--primaryYellow);
-    border-top: solid var(--dark) 5px;
+.items {
+    display: flex;
+    
+    justify-content: right;
+    align-items: flex-end;
+    padding-left: 150px;
+    margin-top: 0px;
+    margin-left: 200px;
 }
-body {
+nav{ 
+    display: flex;
+    
+    justify-content: flex-end;
+    padding: 1px;
+}
+.GIFsnap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.aboutme{
+    padding: 5px;
+    text-decoration: none;
+    border-right: 1px solid var(--dark);
+    color: var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.experiences{
+    padding: 5px;
+    border-right: 1px solid var(--dark);
+    text-decoration: none;
+    color: var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+.skills:hover{
     background-color: var(--secondaryRed);
+    color: var(--light);
+}
+.skills{
+    padding: 5px;
+    border-right: 1px solid var(--dark);
+    text-decoration: none;
+    color: var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+.contact{
+    padding: 5px;  
+    border-right: 1px solid var(--dark);
+    text-decoration: none;
+    color: var(--dark);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18pt;
+}
+.firstquote{
+    font-size: 50px;
+    color: var(--dark);
+    font-family: var(--font-family-title);
+    text-shadow: var(--light) 2px 3px;
+    margin-left: 20px;  
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:500px){
+    #items {
+        display: none;
+    }
+    .flag{
+        display: flex;
+    }
 
 }
