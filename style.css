@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 :root {
     --primaryRed : #aa0505;  
     --primaryYellow : #fbca03;
-    --font-family-title: 'Lobster', cursive;
+    --font-family-title: 'Anton', sans-serif;
     --font-family-text: 'Roboto', sans-serif;
-    --dark : #030000;
-    --light : #fcfbf7; 
+    --dark : #2c0101;
+    --light : #fcf0c0; 
     --secondaryRed: #4b0908;
     --secondaryYellow: #b97d10;
     --spacing: 8px;
     --font-size-text: 14pt;
   
+}
 
-* {
+*{
     margin: 0px;
 }
 
@@ -22,6 +23,7 @@ h1 {
     font-size: 38pt;
     text-shadow: #030000 2px 5px;
     margin: var(--spacing);
+    color: var(--secondaryYellow);
 }
 
 h2 {
@@ -29,11 +31,11 @@ h2 {
     font-size: 28pt;
     text-shadow: #030000 2px 5px;
     margin: var(--spacing);
+    color: var(--secondaryYellow);
 }
 
 footer {
-    background-color: var(--secondaryYellow);
-    border-top: solid var(--dark) 5px;
+    background-color: var(--light);
 }
 
 span {
@@ -63,8 +65,8 @@ span {
 
 
 .ironmanindex{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 50%;
+    max-height: 50%;
 }
 .tabHobbies{
     display: flex;
@@ -93,17 +95,17 @@ span {
 }
 
 
-#mechanical:hover{
+/*#mechanical:hover{
     color: var(--light);
     background-color: var(--dark);
     box-shadow: 3px 3px 3px var(--light);
-}
+}*/
     
 
 h3{
     font-size: 20pt;
     font-family: var(--font-family-title);
-
+    color: var(--secondaryYellow);
 }
 .pageTitle { 
     padding: 10px;
@@ -131,6 +133,7 @@ h3{
     font-style: oblique;
     font-weight: bold;
     text-decoration: none;
+    opacity: 100%;
 }
 
 .address{
@@ -139,6 +142,7 @@ h3{
     color: var(--secondaryRed);
     padding: 2px;
 }
+
 .flag{ 
     width: 8vw;
     height: 10vh;
@@ -154,23 +158,28 @@ figure{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
-    border-bottom: solid var(--dark) 5px;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    object-fit: cover;
 }
 
 header {
-    background-color: var(--secondaryYellow);
+    background-color: var(--light);
     display: flex;
-    border-bottom: solid var(--dark) 5px;
     top: 0;
     width: 100%;
     align-items: center;
     justify-content: flex-start;
 }
 
+.indexheader{
+    background-color: transparent;
+    position:fixed;
+}
 
 body {
-    background-color: var(--secondaryRed);
+    background-image: url("background.jpg");
     color : var(--light);
 
 }
@@ -190,7 +199,7 @@ body {
 }
 .background-tony {
     width: 866.6px;
-    height: 640px;
+    height: 625px;
      object-fit: cover;
      object-position: top;
      border-radius: 3px;
@@ -345,18 +354,18 @@ body {
     display: flex;
     
     justify-content: right;
-    align-items: flex-end;
+   align-items: flex-end;
     padding-left: 150px;
     margin-top: 0px;
     margin-left: 200px;
 }
-nav{ 
+/**nav{ 
     display: flex;
     
     justify-content: flex-end;
     padding: 1px;
 }
-
+**/
 .aboutmeBar{
     padding: 5px;
     text-decoration: none;
@@ -365,6 +374,7 @@ nav{
     font-style: oblique;
     font-weight: bold;
     font-size: 18pt;
+    margin-left: 200px;
 }
 
 .experiencesBar{
@@ -376,10 +386,10 @@ nav{
     font-weight: bold;
     font-size: 18pt;
 }
-.skillsBar:hover{
+/*.skillsBar:hover{
     background-color: var(--secondaryRed);
     color: var(--light);
-}
+}*/
 .skillsBar{
     padding: 5px;
     border-right: 1px solid var(--dark);
@@ -399,10 +409,10 @@ nav{
     font-size: 18pt;
 }
 .firstquote{
-    font-size: 50px;
+    font-size: 60px;
     color: var(--dark);
     font-family: var(--font-family-title);
-    text-shadow: var(--light) 2px 3px;
+    
     margin-left: 20px;  
     text-decoration: none;
 }
@@ -452,13 +462,13 @@ h1 {
 }
 h1.title {
     text-transform: uppercase;
-    color: var(--light);
+    color: var(--secondaryYellow);
 }
 
-div {
+/**div {
     display: block;
     
-}
+}**/
 
 .row {
     display: flex;
@@ -468,13 +478,7 @@ div {
     justify-content: space-around;
 }
 
-h2 {
-    font-family: var(--font-family-title);
-    font-size: 28pt;
-    text-shadow: #030000 2px 5px;
-    margin: var(--spacing);
-    color: var(--light);
-}
+
 
 .skill-unique {
     width: 100%;
