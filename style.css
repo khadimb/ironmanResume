@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: var(--secondaryRed);
+    background-color: var(--dark);
 }
 
 
@@ -103,23 +103,34 @@ element.style {
     width: 100%;
 }
 
-.yellow-bg {
-    background-color: var(--secondaryYellow)!important;
+
+@keyframes auto-progress {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
-.yellow-color {
-    color: var(--secondaryYellow);
-}   
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 20px;
+    width: 700px;
+    margin: 50px auto;
+    border-radius: 5px;
+}
 
-.progress-bar .yellow-bg .animateProgressbar {
-    animation-duration: 6s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    
-
-
+.progress-bar-inner {
+  display: block;
+  height: 20px;
+  width: 100%;
+  background-color: #55c1da;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  position: relative;
+  animation: auto-progress 6s ease;
+  text-align: right;
+  text-decoration-color:var(--light) ;
 }
