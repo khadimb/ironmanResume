@@ -232,6 +232,9 @@ body {
 }
 
 
+body {
+    background-color: var(--dark);
+
 .Experiences {
     font-style: var(--font-family-text);
     color: var(--light);
@@ -420,6 +423,7 @@ nav{
         display: flex;
     }
 
+
 }
 
 
@@ -507,21 +511,36 @@ element.style {
     width: 100%;
 }
 
-.yellow-bg {
-    background-color: var(--secondaryYellow)!important;
-}
 
-.yellow-color {
-    color: var(--secondaryYellow);
+@keyframes auto-progress {
+  0% {
+    width: 0%;
+  }
+
+
+  100% {
+    width: 100%;
+  }
 }
 
 .progress-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--light);
-    text-align: center;
-    white-space: nowrap;
-    transition: width .6s  ease;
+    background-color: #1a1a1a;
+    height: 20px;
+    width: 700px;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+.progress-bar-inner {
+  display: block;
+  height: 20px;
+  width: 100%;
+  background-color: #55c1da;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  position: relative;
+  animation: auto-progress 6s ease;
+  text-align: right;
+  text-decoration-color:var(--light) ;
 }
 
