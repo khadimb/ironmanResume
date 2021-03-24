@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Man Résumé</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="page.css">
+
 </head>
 <header>
     <a href="index.html">
@@ -41,16 +43,16 @@
     <div class = "container">
         <div class = "tony-background">
             <img
-              src="tony-and-ironman.jpg"
+              src="tony-or-ironman.gif"
               alt="background tony stark"
               class="background-tony"
             />
         </div>
         <form class ="contact-ironman">
             <div class = "choose-your-guy">
-            <fieldset class = "tony-stark-or-ironman">
                 <legend>Choose your guy!</legend>
 
+                <div class = "choose">
                 <div class = "tony">
                 <input id = "tony-stark" name = "choose" type = "radio" value = "tony stark"/>
                 <label for = "tony-stark" class = "radio-label">Tony Stark</label>
@@ -60,27 +62,31 @@
                 <input id = "ironman" name = "choose" type = "radio" value = "iron man"/>
                 <label for = "ironman" class = "radio-label">Iron Man</label>
                 </div>
-            </fieldset>
+            </div>
             </div>
             <div class = "formular"> 
         
              <label for = "first-name">First-name</label>
-                <input id ="first-name" name = "first-name" type = "text" style = "width: 250px;"/>
+                <input id ="first-name" name = "first-name" type = "text"/>
         
             
             <label for = "last-name">Last-name</label>
-                <input id ="last-name" name = "last-name" type = "text" style = "width: 250px;"/>
+                <input id ="last-name" name = "last-name" type = "text"/>
             
             <label for = "email">Your Email</label>
-                <input id ="email" name = "email" type = "text" style = "width: 450px;"/>
+                <input id ="email" name = "email" type = "text"/>
             
             
             <label for = "message" class = "your-message">Your Message</label>
-                <input id ="message" name = "message" type = "text" style = "height: 250px;"/>
+                <textarea id ="message" name = "message" type = "text"></textarea>
             
             <div class = "submit">
+                <div class = "buttonSubmit">
                 <button>Submit</button>
+                </div>
+                <div class = "buttonPrint">
                 <button>Print the resume</button>
+            </div>
             </div>
         </div>
             </form>
@@ -88,6 +94,7 @@
    
     
 </body>
+
 <footer>
     <nav class="navfooter">
          <div class="nav-title">
@@ -102,4 +109,5 @@
         </div>      
     </nav>
 </footer>
+
 </html>
