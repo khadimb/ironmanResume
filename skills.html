@@ -5,32 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IronMan Résumé</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skills.css">
 </head>
-    <header>
-        <nav>
-         <ul>
-          <li>
-            <img
-              src="iron man .png"
-              alt="Logo d'IronMan"
-              class="logo"
-            />
-          </li>
-         </ul>
-        <div class="nav-title">
-            Tony Stark / Iron Man Résumé
+
+<header>
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="#myTopnav" class="icon" onclick="myFunction()">
+            <section class="menuBurger">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <i class="fa fa-bars"></i>
+            </section>
+        </a>
         </div>
-        <div class="items" id="items">
-            <a href="">About Me</a>
-            <a href="">My Experiences</a>
-            <a href="">My Skills</a>
-            <a href="">Contact Me</a>
-            <a class="close" href="#close">X</a>
-        </div>
-        <a class="burger" href="#items">MENU</a>
-        </nav>
-    </header>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }</script>
+    </div>
+</header>
+
 <body>
     <div class="skills">
         <div id="principalSkills">
@@ -111,18 +116,24 @@
 
 
 </body>
+
 <footer>
-    <nav>
-         <div class="nav-title">
-        Tony Stark / Iron Man Social Networks
-    </div>
-    <div class="items" id="items">
-        <a href="">Facebook</a>
-        <a href="">Twitter</a>
-        <a href="">Instagram</a>
-        <a href="">Linkedin</a>
-        <a class="close" href="#close">X</a>
-        </div>      
+    <nav class="navfooter">
+        <img src="Images/Stark_Industries.png" alt="starkindustry" id="starkindustry">
+        <div class="items" id="items">
+            <a href="https://fr-fr.facebook.com/profile.php?id=100005833570349%22%3E"></a><img src=" Images/Facebook.png"
+                alt="Logo Facebook" class="logofacebook"></a>
+            <a href="https://twitter.com/TheStarkOne%22%3E"></a><img src=" Images/Twitter.png" alt="Logo Twitter"
+                class="logo twitter" id="logoRS"></a>
+            <a href="https://www.instagram.com/ironman.official/%22%3E"></a><img src=" Images/Instagram.png"
+                alt="Logo Instagram" class="logo instagram" id="logoRS"></a>
+            <a href="https://www.linkedin.com/in/tony-stark-37599389%22%3E"></a><img src=" Images/Linkedin.png"
+                alt="Logo Linkedin" class="logo linkedin" id="logoRS"></a>
+        </div>
+
+
     </nav>
+
 </footer>
+
 </html>
