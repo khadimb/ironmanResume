@@ -334,8 +334,8 @@ element.style {
 
     }
     .topnav a.active {
-      background-color:var(--secondaryBlue);
-      color: black;
+      background-color: transparent;
+      color: var(--secondaryBlue);
     }
 
 }
