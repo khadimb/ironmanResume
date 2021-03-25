@@ -1,36 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap%27');
 :root {
+    --primaryBlue : #4a8a94;
+    --secondaryBlue: #baf0fb;
     --font-family-title: 'Anton', sans-serif;
     --font-family-text: 'Roboto', sans-serif;
-    --dark : #2c0101;
-    --light : #fcf0c0; 
+    --light : #fff;
     --spacing: 8px;
     --font-size-text: 14pt;
-    --bleu-indigo: #4a8a94;
-    --gris:#414141;
-    --noir:#090909;
-    --bleu-très-clair:#baf0fb;
-    --bleu:#1a4e5b;
-    --blanc-vers-gris:#a6a6a6;
-  
+    --font-weight : 100;
+
 }
 
 h1{
-    color: var(--bleu-très-clair);
+    color: var(--secondaryBlue);
+    padding: 16px;
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight);
     
 }
 
 body {
-    background-image: url("jarvis.jpg");
+    background-image: url("Images/jarvis.jpg");
     color : var(--light);
-
 }
 
 .container{
     padding-top: 16px;
     color: var(--light);
-    font-family: var(--font-family-text);
+    font-family: var(--font-size-text);
     height: 640px;
     display: flex;
     justify-content: space-around
@@ -41,7 +40,7 @@ body {
     border-radius: 3px;
     margin-bottom: 30px;
     width: 50%;
-    border: var(--bleu-très-clair) 4px solid;
+    border: var(--secondaryBlue) 4px solid;
     transform: scale(1, 1);
     transition : transform 1s;
     transition-delay: 2s;
@@ -52,15 +51,10 @@ body {
      object-fit: cover;
 }
 
-fieldset:hover{
-    filter: brightness(200%);
-    
-}
 
 .contact-ironman {
-    color: var(--bleu-très-clair);
+    color: var(--secondaryBlue);
     border-radius: 3px;
-    background-color: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,18 +63,15 @@ fieldset:hover{
 }
 
 .choose-your-guy {
+    padding-top: 8px;
+    padding: 8px;
     width: 100%;
-}
-
-legend {
-    display: flex;
-    justify-content: center;
 }
 
 .choose{
     display: flex;
     justify-content: space-around;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 input:hover{
@@ -89,9 +80,10 @@ input:hover{
 }
 
 input {
-    background-color: black;
-    color: var(--bleu-très-clair);
-    border: var(--bleu-indigo) 2px solid;
+    transition: 0.4s;
+    background-color: var(--noir);
+    color: var(--secondaryBlue);
+    border: var(--primaryBlue) 2px solid;
     height: 7%;
 }
 
@@ -101,20 +93,29 @@ textarea:hover{
 }
 
 textarea {
-    background-color: black;
-    color: var(--bleu-très-clair);
-    border: var(--bleu-indigo) 2px solid;
-    width: 100%;
+    transition: 0.4s;
+    background-color: var(--noir);
+    color: var(--secondaryBlue);
+    border: var(--primaryBlue) 2px solid;
+    width: 99%;
     height: 20%;
 }
 
 .tony-stark-or-ironman {
     display: flex;
     justify-content: space-between;
-    color: var(--bleu-très-clair);
+    color: var(--secondaryBlue);
     margin-right: 5px;
     padding: 25px;
-    border: var(--bleu-indigo) solid;
+    border: var(--primaryBlue) solid;
+
+}
+
+.contact-ironman {
+    background-color:#baf0fb21 ;
+    margin-bottom: 30px;
+    padding-right: 16px;
+
 
 }
 
@@ -126,7 +127,19 @@ textarea {
     height: 600px;
     padding-left: 8px;
     padding-top: 16px;
-    color: var(--bleu-très-clair);
+    color: var(--secondaryBlue);
+}
+
+.errors {
+    background-color: #baf0fb50;
+    color: rgb(27, 28, 41);
+    font-weight: bold;
+    list-style: none;
+    font-family: var(--font-size-text);
+    padding: 12px;
+    padding-inline: 20px;
+    line-height: 150%;
+    letter-spacing: 1.5px;
 }
 
 .buttonSubmit:hover{
@@ -143,8 +156,7 @@ textarea {
     
 .buttonPrint:active{
     filter: brightness(50%);
-    }    
-
+    }
 .submit {
     display: flex;
     justify-content: space-around;
@@ -155,9 +167,10 @@ textarea {
 }
 
 button{
-    color: var(--bleu-très-clair);
-    background-color: var(--noir);
-    border:var(--bleu-indigo) 2px solid;
+    font-family: var(--font-size-text);
+    color: var(--secondaryBlue);
+    background-color: #122325d5;
+    border:var(--primaryBlue) 2px solid;
     height: 60px;
     width: 100px;
 
@@ -167,7 +180,7 @@ button{
 @media screen and (max-width: 800px){
 
     .container{
-        padding-top: 16px;
+        padding-top: 25%;
         color: var(--light);
         font-family: var(--font-family-text);
         height: 640px;
@@ -179,7 +192,7 @@ button{
 
     .tony-background {
         width: 95%;
-        border: var(--bleu-très-clair) 4px solid;
+        border: var(--secondaryBlue) 4px solid;
         margin: 16px;
     }
     .background-tony {
@@ -203,10 +216,10 @@ button{
     .tony-stark-or-ironman {
         display: flex;
         justify-content: space-between;
-        color: var(--bleu-très-clair);
+        color: var(--secondaryBlue);
         margin-right: 3px;
         padding: 15px;
-        border: var(--bleu-indigo) solid;
+        border: var(--primaryBlue) solid;
         width: 100%;
     
     }
@@ -219,7 +232,7 @@ button{
         height: 600px;
         padding-left: 8px;
         padding-top: 16px;
-        color: var(--bleu-très-clair);
+        color: var(--secondaryBlue);
     }
 
 }
@@ -241,7 +254,7 @@ button{
     .tony-background {
         border-radius: 3px;
         width: 90%;
-        border: var(--bleu-très-clair) 4px solid;
+        border: var(--secondaryBlue) 4px solid;
     }
     .background-tony {
         width: 100%;
@@ -263,10 +276,10 @@ button{
     .tony-stark-or-ironman {
         display: flex;
         justify-content: space-between;
-        color: var(--bleu-très-clair);
+        color: var(--secondaryBlue);
         margin-right: 3px;
         padding: 15px;
-        border: var(--bleu-indigo) solid;    
+        border: var(--primaryBlue) solid;    
     }
     
     .formular {
@@ -275,8 +288,8 @@ button{
         justify-content: space-around;
         width: 98%;
         height: 600px;
-
-        color: var(--bleu-très-clair);
+        margin-bottom: 20%;
+        color: var(--secondaryBlue);
     }
 
     .submit {
@@ -288,6 +301,11 @@ button{
 
     .buttonPrint{
         display: none;
+    }
+
+    footer {
+        width: 100%;
+        height: 100%;
     }
 
 
