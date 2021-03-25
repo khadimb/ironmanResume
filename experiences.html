@@ -1,254 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IronMan Résumé</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="experiences.css">
 </head>
-    <header>
-        <nav>
-            <img
-              src="iron man .png"
-              alt="Logo d'IronMan"
-              class="logo"
-            />
-         
-        <div class="nav-title">
-            Tony Stark / Iron Man Résumé
-        </div>
-        <div class="items" id="items">
-            <a href="">About Me</a>
-            <a href="">My Experiences</a>
-            <a href="">My Skills</a>
-            <a href="">Contact Me</a>
-            <a class="close" href="#close">X</a>
-        </div>
-        <a class="burger" href="#items">MENU</a>
-        </nav>
-    </header>
+<header>
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="index.html">Home</a>
+              <a href="about.html">About Me</a>
+              <a href="experiences.html">Experiences</a>
+              <a href="skills.html">Skills</a>
+              <a href="contact.html">Contact Me</a>
+              <a href="#myTopnav" class="icon" onclick="myFunction()">
+                <section class="menuBurger">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <i class="fa fa-bars"></i>
+                </section>
+            </a>
+          </div> 
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          } </script>
+</header>
 <body>
-   <section class="Experiences">
-       <div>
-           <h1>My Experiences
-           </h1>
-       </div>
-       <section class="name">
-       <div>
-           <h2>Tony Stark
-           </h2>
-       </div>
-       <div>
-        <h2>Iron Man
-        </h2>
-    </div>
-</section>
-       <section class="cercledate">
+    <section id="experiences" class="experiences">
         <div>
-            <div class="bulle">
-            <p>1974</p>
-                <span class="TonyStarkExp">"Production of my first printed circuit (I was 4 years old !)"</span>
-            </div>
+            <h1>EXPERIENCES
+            </h1>
         </div>
-        <div>
-            <div class="bulle">
-            <p>1977</p>
-                <span class="TonyStarkExp">"Production of my first motorized machine"</span>
+        <section>
+            <div class="fenetre">
+                <p class="date">2008</p>
+                <img src="Images/IronMan_Title.jpg" alt="titrefilm" class="titrefilm">
+                <img src="Images/gifIronman2008.gif" alt="scene" class="scene">
+                <p class="texte">"First A.R.C. Reactor conception" <br><br>
+                    "Jericho rockets demonstration" <br><br>
+                    "First Iron Man armor made in a deep Afghanistan cave with a mini A.R.C. Reactor" <br><br>
+                    "Weapon production stopped from Stark Industries" <br><br>
+                    "First official Iron Man armor conception including weapons, flight stabilizer..." <br><br>
+                    "Escape from Ten Rings using my first Iron Man armor"</p>
+                <img src="Images/IM1markiii.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-        </div>
-        <div>
-            <div class="bulle">
-            <p>1985</p>
-                <span class="TonyStarkExp">"Hacking of Pentagon's servers"</span>
+            <a href="#experiences" id="scrolltop" type="button"><img src="Images/Reactor.png" width="40" height="40"></a>
+            <div class="fenetre">
+                <p class="date">2009</p>
+                <img src="Images/IronMan_Title.jpg" alt="titrefilm" class="titrefilm">
+                <img src="Images/gifIronman2009.gif" alt="scene" class="scene">
+                <p class="texte">"Gulmaria battle leading to terrorist's weapons destruction and civil
+                    liberation" <br><br>
+                    "Fight Iron Monger and defeat him"</p>
+                <img src="Images/IM12markiv.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-        </div>
-        <div>
-            <div class="bulle">
-            <p>1986</p>
-                <span class="TonyStarkExp">"Awarded at 4th Annual M.I.T. Robot Design"</span>
+            <div>
+            <div class="fenetre">
+                <p class="date">2010</p>
+                <img src="Images/IronMan2_Title.jpg" alt="titrefilm" class="titrefilm">
+                <img src="Images/gifIronman2010.gif" alt="scene" class="scene">
+                <p class="texte">"Discovery of a new element able to replace paladium in A.R.C. Reactor"
+                    <br><br>
+                    "War Machin armor conception" <br><br>
+                    "Fight Whiplash and defeat him" <br><br>
+                    "Join S.H.I.E.L.D. as consultant"
+                </p>
+                <img src="Images/markvIM2.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-        </div>
-        <div>
-            <div class="bulle">
-            <p>1987</p>
-                <span class="TonyStarkExp">"M.I.T. certified, valedictorian of the year"</span>
+            <div class="fenetre">
+                <p class="date">2012</p>
+                <img src="Images/Avengers.jpg" alt="titrefilm" class="titrefilm">
+                <img src="Images/gifIronman2012.gif" alt="scene" class="scene">
+                <p class="texte">
+                    "A.R.C.Reactor updates able to self-supply Stark Tower with bio energy" <br><br>
+                    "Join AVENGER" <br><br>
+                    "Fight Thor and Loki" <br><br>
+                    "Fight and defeat Chitauri army in New-York battle" <br><br>
+                    "Save New-York from a nuclear rocket"
+                </p>
+                <img src="Images/Avengermarkvii.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-        </div>
-        <div>
-           <div class="bulle">
-            <p>1991</p>
-                <span class="TonyStarkExp">"Stark Industries C.E.O., youngest C.E.O. from more than 500 best world Industries" <br><br>
-                                            "First artificial intelligence conception (Just A Rather Very Intelligent System = J.A.R.V.I.S.)" <br><br>
-                                            "Sign numerous arms contracts with the US Air Force and earns billions of dollars"</span>
+            <div class="fenetre">
+                <p class="date">2013</p>
+                <img src="Images/Ironman3.jpg" alt="titrefilm" class="titrefilm">
+                <img src="Images/gifIronman2013.gif" alt="scene" class="scene">
+                <p class="texte">"Iron Legion conception to protect humanity against
+                    extraterrestrial menace" <br><br>
+                    "Fight Aldrich Killian and defeat him"
+                </p>
+                <img src="Images/iron-man3-mark-42.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-        </div>
-        <div>
-            <div class="bulle">
-            <p>2008</p>
-                <span class="TonyStarkExp">"First A.R.C. Reactor conception" <br><br>
-                                            "Jericho rockets demonstration" <br><br>
-                                            "First Iron Man armor made in a deep Afghanistan cave with a mini A.R.C. Reactor" <br><br>
-                                            "Weapon production stopped from Stark Industries" <br><br>
-                                            "First official Iron Man armor conception including weapons, flight stabilizer..."</span>
-                <span class="IronManExp">"Escape from Ten Rings using my first Iron Man armor"</span>
+            <div class="fenetre">
+                <p class="date">2015</p>
+                <img src="Images/Avengers2.jpg" alt="titrefilm" class="titrefilm">
+                <img src="Images/gifIronman2015.gif" alt="scene" class="scene">
+                <p class="texte">"Ultron conception, an artificial intelligence able to bring peace in world"
+                    <br><br>
+                    "Second artificial intelligence conception (Female Replacement Intelligence Digital
+                    Assistant Youth F.R.I.D.A.Y.)" <br><br>
+                    "Vision conception using J.A.R.V.I.S., vibranium and mind stone" <br><br>
+                    "Hacking of Nexus"<br><br>
+                    "Sokovie battle" <br><br>
+                    "Fight and defeat Strucker, Hulk and Ultron"
+                </p>
+                <img src="Images/hulkbuster-veronica-avengers2.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-        </div>
-        <div>
-            <div class="bulle">
-            <p>2009</p>
-                <span class="IronManExp">"Gulmaria battle leading to terrorist's weapons destruction and civil liberation" <br><br>
-                                         "Fight Iron Monger and defeat him"</span>
+            <div class="fenetre">
+                <p class="date">2016</p>
+                <img src="Images/Captain-America-Civil-War.jpg" alt="titrefilm" class="titrefilm">
+                <img src="Images/gifIronman2016.gif" alt="scene" class="scene">
+                <p class="texte">"Third artificial intelligence conception able to recreate a memory (Binarily
+                    Augmented Retro-Framing B.A.R.F.)" <br><br>
+                    "Internship supervisor for Peter Parker (Spider Man)" <br><br>
+                    "Spider Man costume conception" <br><br>
+                    "Fight Captain America, the Winter Soldier, Falcon, Ant Man, Hawkeye and Scarlet Witch"
+                </p><img src="Images/Civil Warmarkxlvi-580x1046.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-        </div>
-        <div>
-            <div class="bulle">
-            <p>2010</p>
-                <span class="TonyStarkExp">"Discovery of a new element able to replace paladium in A.R.C. Reactor" <br><br>
-                                            "War Machin armor conception"</span>
-                <span class="IronManExp">"Fight Whiplash and defeat him" <br><br>
-                                         "Join S.H.I.E.L.D. as consultant"</span>
+            <div class="fenetre">
+                <p class="date">2017</p>
+                <img src="Images/Homecoming titre.png" alt="titrefilm" class="titrefilm">
+                <img src="Images/gif Ironman2017.gif" alt="scene" class="scene">
+                <p class="texte">"Save Staten Island's ferry"</p>
+                <img src="Images/Homecommingmarkxlvii-580x1002.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-        </div>
-        <div>
-            <div class="bulle">
-            <p>2012</p>
-                <span class="TonyStarkExp">"A.R.C.Reactor updates able to self-supply Stark Tower with bio energy"</span>
-                <span class="IronManExp">"Join AVENGER" <br><br>
-                                         "Fight Thor and Loki" <br><br>
-                                         "Fight and defeat Chitauri army in New-York battle" <br><br>
-                                         "Save New-York from a nuclear rocket"</span>
+            <div class="fenetre">
+                <p class="date">2018</p>
+                <img src="Images/avengers3.jpg" alt="titrefilm" class="titrefilm">
+                <img src="Images/gifIronan20182.gif" alt="scene" class="scene">
+                <p class="texte">"New nanotech armors conception as well as 17-A protocol for Spider Man"
+                    <br><br>
+                    "Fight Ebony Maw, Cull Obsidian and Thanos"
+                </p>
+                <img src="Images/Avenger3markl-580x1046.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-        </div>
-        <div>
-            <div class="bulle">
-            <p>2013</p>
-                <span class="TonyStarkExp">"Iron Legion conception to protect humanity against extraterrestrial menace"</span>
-                <span class="IronManExp">"Rose Hill battle" <br><br>
-                                         "Fight Aldrich Killian and defeat him"</span>
-        </div>  
-    </div>
-    <div>
-            <div class="bulle">
-            <p>2015</p>
-                <span class="TonyStarkExp">"Ultron conception, an artificial intelligence able to bring peace in world" <br><br>
-                                            "Second artificial intelligence conception (Female Replacement Intelligence Digital Assistant Youth F.R.I.D.A.Y.)" <br><br>
-                                            "Vision conception using J.A.R.V.I.S., vibranium and mind stone" <br><br>
-                                            "Hacking of Nexus"</span>
-                <span class="IronManExp">"Sokovie battle" <br><br>
-                                         "Fight and defeat Strucker, Hulk and Ultron"</span>
+            <div class="fenetre">
+                <p class="date">2023</p>
+                <img src="Images/avengers endgame.png" alt="titrefilm" class="titrefilm">
+                <img src="Images/GIFSnap.gif" alt="scene" class="scene">
+                <p class="texte">
+                    "Space Time G.P.S. conception and time travel machine conception using quantic world"
+                    <br><br>
+                    "Nanoglove conception able to support all Infinity Stones energy" <br><br>
+                    "Using of the time machine to collect Infiny Stones from the past" <br><br>
+                    "Fight and defeat Thanos army using his nanoglove with Infinity Stones"
+                </p><img src="Images/Avengers4marklxxxv-580x1063.jpg" alt="armureIronMan1" class="armureIronMan">
             </div>
-    </div>
-    <div>
-            <div class="bulle">
-            <p>2016</p>
-                <span class="TonyStarkExp">"Third artificial intelligence conception able to recreate a memory (Binarily Augmented Retro-Framing B.A.R.F.)" <br><br>
-                                            "Internship supervisor for Peter Parker (Spider Man)" <br><br>
-                                            "Spider Man costume conception"</span>
-                <span class="IronManExp">"Fight Captain America, the Winter Soldier, Falcon, Ant Man, Hawkeye and Scarlet Witch"</span>
-            </div>
-    </div>
-    <div>
-            <div class="bulle">
-            <p>2017</p>
-                <span class="IronManExp">"Save Staten Island's ferry"</span>
-            </div>
-    </div>
-    <div>
-            <div class="bulle">
-            <p>2018</p>
-                <span class="TonyStarkExp">"New nanotech armors conception as well as 17-A protocol for Spider Man"</span>
-                <span class="IronManExp">"Fight Ebony Maw, Cull Obsidian and Thanos"</span>
-            </div>
-    </div>
-    <div>
-            <div class="bulle">
-            <p>2023</p>
-                <span class="TonyStarkExp">"Space Time G.P.S. conception and time travel machine conception using quantic world" <br><br>
-                                            "Nanoglove conception able to support all Infinity Stones energy"</span>
-            <!--</div>
-            <div class="bulleDroite">-->
-                <span class="IronManExp">"Using of the time machine to collect Infiny Stones from the past" <br><br>
-                                         "Fight and defeat Thanos army using his nanoglove with Infinity Stones"</span>
-            </div>
-    </div>
+        </section>
     </section>
-       <!--<div class="ExperiencesTonyStark">
-            <ul>
-                <li> 1974: Production of my first printed circuit (I was 4 years old !)</li>
-                <li> 1977: Production of my first motorized machine</li>
-                <li> 1985: Hacking of Pentagon's servers</li>
-                <li> 1986: Awarded at 4th Annual M.I.T. Robot Design</li>
-                <li> 1987: M.I.T. certified, valedictorian of the year</li>
-                <li> 1991: Stark Industries C.E.O., youngest C.E.O. from more than 500 best world Industries
-                        First artificial intelligence conception (Just A Rather Very Intelligent System = J.A.R.V.I.S.)</li>
-                <li> 1991-2008: Signs numerous arms contracts with the US Air Force and earns billions of dollars</li>
-                <li> 2008: First A.R.C. Reactor conception
-                        Jericho rockets demonstration
-                        First Iron Man armor made in a deep Afghanistan cave with a mini A.R.C. Reactor 
-                        Weapon production stopped from Stark Industries
-                        First official Iron Man armor conception including weapons, flight stabilizer...</li>
-                <li> 2010: Discovery of a new element able to replace paladium in A.R.C. Reactor
-                        War Machin armor conception</li>
-                <li> 2012: A.R.C.Reactor updates able to self-supply Stark Tower with bio energy</li>
-                <li> 2013: Iron Legion conception to protect humanity against extraterrestrial menace</li>
-                <li> 2015: Ultron conception, an artificial intelligence able to bring peace in world
-                        Second artificial intelligence conception (Female Replacement Intelligence Digital Assistant Youth F.R.I.D.A.Y.)
-                        Vision conception using J.A.R.V.I.S., vibranium and mind stone
-                        Hacking of Nexus</li>
-                <li> 2016: Third artificial intelligence conception able to recreate a memory (Binarily Augmented Retro-Framing B.A.R.F.)
-                        Internship sueprvisor for Peter Parker (Spider Man)
-                        Spider Man costume conception</li>
-                <li> 2018: New nanotech armors conception as well as 17-A protocol for Spider Man</li>
-                <li> 2023: Space Time G.P.S. conception and time travel machine conception using quantic world
-                        Nanoglove conception able to support all Infinity Stones energy</li>
-            </ul>
-       </div>
-       <div class="Border">
-        
-       </div>
-       
-       <div class="ExperiencesIronMan">
-           <ul>
-                <li> 2008: Escape from Ten Rings using my first Iron Man armor</li>
-                <li> 2009: Gulmaria battle leading to terrorist's weapons destruction and civil liberation
-                        Fight Iron Monger and defeat him </li>
-                <li> 2010: Fight Whiplash and defeat him 
-                        Join S.H.I.E.L.D. as consultant</li>
-                <li> 2012: Join AVENGER
-                        Fight Thor and Loki
-                        Fight and defeat Chitauri army in New-York battle
-                        Save New-York from a nuclear rocket</li>
-                <li> 2013: Rose Hill battle
-                        Fight Aldrich Killian and defeat him </li>
-                <li> 2015: Sokovie battle
-                        Fight and defeat Strucker, Hulk and Ultron</li>
-                <li> 2016: Fight Captain America, the Winter Soldier, Falcon, Ant Man, Hawkeye and Scarlet Witch</li>
-                <li> 2017: Save Staten Island ferry</li>
-                <li> 2018: Fight Ebony Maw, Cull Obsidian and Thanos</li>
-                <li> 2023: Using of the time machine to collect Infiny Stones from the past
-                        Fight and defeat Thanos army using his nanoglove with Infinity Stones</li>
-
-                </ul>
-       </div>-->
-       <div class="GIFsnap">
-            <img src="Images/GIFSnap.gif" alt="IronMan Snap" class="snap">
-       </div>
-   </section>
-    
 </body>
-    <footer>
-        <nav>
-             <div class="nav-title">
-            <!--Tony Stark / Iron Man Social Networks-->
-        </div>
-        <div class="items" id="items">
-            <a href="https://fr-fr.facebook.com/profile.php?id=100005833570349"><img src="Images/Facebook.png" alt="Logo Facebook" class="logo facebook" id="logoRS"></a>
-            <a href="https://twitter.com/TheStarkOne"><img src="Images/Twitter.png" alt="Logo Twitter" class="logo twitter" id="logoRS"></a>
-            <a href="https://www.instagram.com/ironman.official/"><img src="Images/Instagram.png" alt="Logo Instagram" class="logo instagram" id="logoRS"></a>
-            <a href="https://www.linkedin.com/in/tony-stark-37599389"><img src="Images/Linkedin.png" alt="Logo Linkedin" class="logo linkedin" id="logoRS"></a>
-            <!--<a class="close" href="#close">X</a>-->
-            </div>      
-        </nav>
-    </footer>
+<footer>
+    <nav class="navfooter">
+        <img src="Images/Stark_Industries.png" alt="starkindustry" id="starkindustry"> 
+    <div class="items" id="items">
+        <a href="https://fr-fr.facebook.com/profile.php?id=100005833570349%22%3E"><img src="Images/Facebook.png" alt="Logo Facebook" class="logofacebook"></a>
+        <a href="https://twitter.com/TheStarkOne%22%3E"><img src="Images/Twitter.png" alt="Logo Twitter" class="logo twitter" id="logoRS"></a>
+        <a href="https://www.instagram.com/ironman.official/%22%3E"><img src="Images/Instagram.png" alt="Logo Instagram" class="logo instagram" id="logoRS"></a>
+        <a href="https://www.linkedin.com/in/tony-stark-37599389%22%3E"><img src="Images/Linkedin.png" alt="Logo Linkedin" class="logo linkedin" id="logoRS"></a>
+        </div> 
+    </nav>
+</footer>
 </html>

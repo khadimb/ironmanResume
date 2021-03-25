@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap%27');
+:root {
+    --primaryBlue : #4a8a94;
+    --secondaryBlue: #baf0fb;
+    --font-family-title: 'Anton', sans-serif;
+    --font-family-text: 'Roboto', sans-serif;
+    --light : #fff;
+    --spacing: 8px;
+    --font-size-text: 14pt;
+    --font-weight : 100;
+
+}
+* {
+    margin: 0px;
+}
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    opacity: 0.5;
+  }
+
+.topnav a {
+    float: left;
+    color: var(--secondaryBlue);
+    text-align: center;
+    padding: 12px 12px 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--font-family-text);
+    font-weight: 300;
+  }
+
+.topnav a:hover {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
+
+.topnav a.active {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
+
+.topnav .icon {
+    display: none;
+  }
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: var(--secondaryBlue);
+    margin: 4px 0;
+}
+
+
+h1 {
+    font-family: var(--font-family-title);
+    font-size: 38pt;
+    color: var(--secondaryBlue);
+    padding-left: 10px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+}
+
+#scrolltop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 230px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 800px;
+    z-index: 1;
+    padding: 0px;
+}
+
+.fenetre {  
+    border: var(--primaryBlue) solid 2px;
+    background: transparent;
+    margin: 20px 10px 20px 10px;
+    padding: 10px;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-right: 500px;
+}
+
+.date {    
+    opacity: 60%;
+    font-size: 8em;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondaryBlue);
+    border: var(--primaryBlue) solid 2px;
+    width: 100%;
+}
+
+.titrefilm { 
+    width: 100%;
+    border: var(--primaryBlue) solid 2px;
+    opacity: 60%;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgb(32, 35, 44);
+}
+
+.armureIronMan {     
+    border: var(--primaryBlue) solid 2px;
+    opacity: 60%;
+    width : 100%;
+    grid-column: 1;
+    grid-row: 2/ span 2;
+    background-color: rgb(32, 35, 44);
+}
+
+.scene {
+    width: 100%;
+    border: var(--primaryBlue) solid 2px;
+    opacity: 60%;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgb(32, 35, 44);
+}
+
+.texte {
+    border: var(--primaryBlue) solid 2px;
+    padding : 30px;
+    opacity: 60%;
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20pt;
+    text-align: left;
+    color: var(--secondaryBlue);
+    font-family: var(--font-family-text);
+    font-weight: 100;
+    width: auto;
+}
+
+body {
+    background-image: url("Images/background0.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color:var(--secondaryBlue);
+    opacity: 0.5;
+}
+
+.navfooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#starkindustry{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    height: 30px;
+    width: auto;
+}
+
+.items {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+#logoRS{
+    width: 20px;
+    height: 20px;
+    margin: var(--spacing);
+}
+.logofacebook{
+    width: auto;
+    height: 20px;
+    margin: var(--spacing);
+}
+
+@media screen and (max-width: 1400px){
+    .fenetre {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+        margin: 100px;
+    }
+    .date {
+        border-radius: 0px;
+        width: auto;
+        font-size: 60pt;
+    }
+    .scene {
+        border-radius: 0px;
+        width: auto;
+    }
+    .texte {
+        border-radius: 0px;
+        font-size: 20pt;
+        text-align: left;
+        width: auto;
+    }
+    .titrefilm {
+        border-radius: 0px;
+        width: auto;
+    }
+    .armureIronMan {
+        border-radius: 0px;
+        width: auto;
+    }
+    #scrolltop {
+        margin-right: 30px;
+        top: 800px;
+        }
+}
+
+@media screen and (max-width: 600px){
+    .fenetre {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+        margin: 1%;
+    }
+    .date {
+        border-radius: 0px;
+        font-size: 30pt;
+    }
+    .scene {
+        border-radius: 0px;
+    }
+    .texte {
+        border-radius: 0px;
+        font-size: 13pt;
+        text-align: left;
+    }
+    .titrefilm {
+        border-radius: 0px;
+    }
+    .armureIronMan {
+        border-radius: 0px;
+    }
+    #scrolltop {
+        top: 800px;
+    }
+    .topnavindex{
+        display: none; 
+    }
+    
+    .topnav a:not(:first-child) {
+          display: none;
+      }
+  
+    .topnav a:hover {
+          background-color: transparent;
+        }
+  
+    .topnav a.icon {
+          float: right;
+          display: block;
+      }
+    .topnav.responsive {
+        position: relative;
+      }
+  
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+  
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: var(--secondaryBlue);
+  
+      }
+    .topnav a.active {
+        background-color:var(--secondaryBlue);
+        color: black;
+      }
+    }
+
+@media screen and (max-width: 400px) {
+    .texte {
+        font-size: 9pt;
+    }
+    
+    #scrolltop {
+        top: 800px;
+    }
+}
