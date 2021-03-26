@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --primaryBlue : #4a8a94;
+    --secondaryBlue: #baf0fb;
+    --font-family-title: 'Anton', sans-serif;
+    --font-family-text: 'Roboto', sans-serif;
+    --light : #fff;
+    --spacing: 8px;
+    --font-size-text: 14pt;
+    --font-weight : 100;
+
+}
+
+*{
+    margin: 0px;
+}
+html, body{
+    height: 100%;
+}
+.bodyback{
+    background-image: url(images/ironmanLanding.gif);
+    background-size: 100% 100%;
+    
+}
+
+
+footer {
+    background-color:var(--secondaryBlue);
+    opacity: 0.5;
+}
+.navfooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#starkindustry{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    height: 30px;
+    width: auto;
+}
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40em;
+    margin: auto;
+    padding-bottom: 1em;
+  }
+  
+  .hobbies > * {
+    background: transparent;
+    border:var(--primaryBlue) solid 1px;
+    padding: 1em;
+    flex: auto;
+    margin: 0.3em;
+    text-align: center;
+    color: var(--secondaryBlue);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight)
+  }
+
+.pageTitle { 
+    padding-bottom: 0.5em;
+    position: top;
+    box-sizing: border-box;
+    color: var(--secondaryBlue);
+    opacity: 0.8;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;   
+    user-select: none;
+    white-space: wrap;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: var(--font-family-title);
+  }
+.boxTitle{
+    text-align: center;
+    padding: 8px;
+    color: var(--secondaryBlue);
+    opacity: 0.8;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    user-select: none;
+    white-space: nowrap;
+    font-size: 3em;
+    font-family: var(--font-family-title);
+    padding-top: 0.5em;
+}
+.boxTab{
+  padding-bottom: 1em;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    object-position: left top;
+    margin-left: 10px;
+    margin-top: 5px;
+    top: 0; 
+}
+
+.flagbox {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40em;
+    margin: auto;
+    padding-bottom: 1em;
+}
+  
+  .flagbox > * {
+    background: transparent;
+    border:var(--primaryBlue) solid 1px;
+    padding: 1em;
+    flex: auto;
+    margin: 0.3em;
+    text-align: center;
+    color: var(--secondaryBlue);
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight)
+}
+
+  #spanish:hover{
+    background-image: url(images/flag\ spain.png);
+    background-size: 72%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #russia:hover{
+    background-image: url(images/flagrussia.png);
+    background-size: 72%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #english:hover{
+    background-image: url(images/flag\ USA.png);
+    background-size: 100%;
+    background-position: initial;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #france:hover{
+    background-image: url(images/flag\ france.png);
+    background-size: 100%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #italy:hover{
+    background-image: url(images/flag\ italy.png);
+    background-size: 100%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #asgardian:hover{
+    background-image: url(images/flag\ asgardia.png);
+    background-size: 72%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+
+.gifironman{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.indexheader{
+    background-color: transparent;
+    position:fixed;
+}
+
+body {
+    background-image: url("background0.jpg");
+    color : var(--secondaryBlue);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    opacity: 0.5;
+  }
+  
+  .topnav a {
+    float: left;
+    color: var(--secondaryBlue);
+    text-align: center;
+    padding: 12px 12px 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--font-family-text);
+    font-weight: 300;
+  }
+  
+  .topnav a:hover {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
+  .topnav a.active {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: var(--secondaryBlue);
+    margin: 4px 0;
+}
+  
+  .topnavindex {
+    background-color:transparent;
+    overflow: hidden;
+    opacity: 0.5;
+  }
+  
+  .topnavindex a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px 12px 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--font-family-text);
+  }
+  
+  .topnavindex a:hover {
+    background-color:var(--light);
+    color: black;
+  }
+  .topnavindex a.active {
+    background-color:var(--light);
+    color: black;
+  }
+
+  .bodyback .firstquote{
+    color: black;
+    text-transform: uppercase;
+    opacity: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-right: 0.5em;
+  }
+ 
+  .logo{
+    height: 8vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+  }
+.skillsBar{
+    padding: 5px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 18pt;
+    color: black;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    filter: blur(0.007em);
+}
+.contactBar{
+    padding: 5px;  
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 18pt;
+    color:black;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.007em);
+}
+.firstquote{
+    font-size: 60px;
+    color: var(--dark);
+    font-family: var(--font-family-title);
+    border: none;
+    margin-left: 20px;  
+    text-decoration: none;
+}
+.items {
+    display: flex;
+    justify-content: flex-end;   
+    padding: 15px;
+}
+
+#logoRS{
+    width: 20px;
+    height: 20px;
+  }
+.logofacebook{
+    width: auto;
+    height: 20px;
+    margin: var(--spacing);
+} 
+
+.coordonnees {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40em;
+    margin: auto;
+  }
+  
+  .coordonnees > * {
+    background: transparent;
+    border:var(--primaryBlue) solid 1px;
+    padding: 1em;
+    flex: auto;
+    margin: 0.3em;
+    text-align: center;
+    color: var(--secondaryBlue);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: none;
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight);
+  }
+
+ #telephone{
+    background-image: url(images/telephone.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: var(--secondaryBlue);
+    text-align: right;
+    background-position-x: 3%;
+  }
+  #email{
+    background-image: url(images/email.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: var(--secondaryBlue);
+    background-position-x: 3% ;
+  }
+  #address{
+    background-image: url(images/address.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: var(--secondaryBlue);
+    background-position-x: 3%;
+  }
+ 
+  .close{
+    display: none;
+  }
+
+  @media screen and (max-width:600px){
+    .flag{
+        display: flex;
+    }
+    body {
+        margin: 0;
+        background-color: black;
+    }
+    .bodyback{
+      background-image: url(images/gifresponsive.gif);
+    }
+
+    .bodyback .firstquote{
+      color: white;
+      opacity: 0.7;
+      text-transform: uppercase;
+      display: flex;
+      text-align: center;
+      margin-right: 0.5em;
+      font-size: 2em;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .firstquote{
+      position: bottom;
+      height: 100%;
+    }
+
+    .topnavindex{
+      display: none;
+    }
+      .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a:hover {
+        background-color: transparent;
+      }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+      position: relative;
+    }
+
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align:var(--secondaryBlue);
+      color: var();
+    }
+    .topnav a.active {
+      background-color: transparent;
+      color: var(--secondaryBlue);
+    }
+
+    #telephone{
+      background-image: url(images/telephone.png);
+      background-size: 15%;
+      background-repeat: no-repeat;
+      background-position: left;
+      color: var(--secondaryBlue);
+      background-position-x: 3%;
+      text-align: center;
+    }
+    #email{
+      background-image: url(images/email.png);
+      background-size: 10%;
+      background-repeat: no-repeat;
+      background-position: left;
+      color: var(--secondaryBlue);
+      background-position-x: 3% ;
+      text-align: right;
+      font-size: 1em;
+    }
+    #address{
+      background-image: url(images/address.png);
+      background-size: 10%;
+      background-repeat: no-repeat;
+      background-position: left;
+      color: var(--secondaryBlue);
+      background-position-x: 3%;
+      font-size: 1em;
+      text-align: right;
+    }
+   
+  }
+ 
