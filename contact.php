@@ -10,13 +10,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     if (empty($data['first-name'])) {
         $errors[] = 'Le prénom est obligatoire';
     }elseif ($data['first-name'] > $maxLenght) {
-        $errors = 'Le prénom doit faire moin de' . $maxLenght . ' caractères';
+        $errors = 'Le prénom doit faire moins de' . $maxLenght . ' caractères';
     }
 
     if (empty($data['last-name'])) {
         $errors[] = 'Le nom est obligatoire';
     }elseif ($data['last-name'] > $maxLenght) {
-        $errors = 'Le nom doit faire moin de' . $maxLenght . ' caractères';
+        $errors = 'Le nom doit faire moins de' . $maxLenght . ' caractères';
     }
 
     if (empty($data['email'])) {
@@ -48,24 +48,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Man Résumé</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    <!--<link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">-->
 
 </head>
 <header>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-          <a href="about.html">About Me</a>
-          <a href="experiences.html">Experiences</a>
-          <a href="skills.html">Skills</a>
-          <a href="contact.css">Contact Me</a>
-      </div> 
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="index.html">Home</a>
+              <a href="about.html">About Me</a>
+              <a href="experiences.html">Experiences</a>
+              <a href="skills.html">Skills</a>
+              <a href="contact.php">Contact Me</a>
+              <a href="#myTopnav" class="icon" onclick="myFunction()">
+                <div class="menuBurger">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <i class="fa fa-bars"></i>
+                </div>
+            </a>
+          </div> 
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          } </script>
 </header>
 
 
 <body>
 
-    <h1>Contact me</h1>
+    <h1>CONTACT ME</h1>
 
     
     <div class = "container">
@@ -74,9 +91,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
               src="Images/tony-or-ironman.gif"
               alt="background tony stark"
               class="background-tony"
-            />
+            >
         </div>
-        <form class ="contact-ironman"  method = "POST">
+        <form class ="contact-ironman"  method = "POST" novalidate>
             <?php if (!empty($errors)) : ?>
                 <ul class = 'errors'>
                     <?php foreach($errors as $error) : ?>
@@ -126,8 +143,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         </div>
             </form>
     </div>
-   
-    
 </body>
 
 <footer>
@@ -139,9 +154,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         <a href="https://www.instagram.com/ironman.official/%22%3E"><img src="Images/Instagram.png" alt="Logo Instagram" class="logo instagram" id="logoRS"></a>
         <a href="https://www.linkedin.com/in/tony-stark-37599389%22%3E"><img src="Images/Linkedin.png" alt="Logo Linkedin" class="logo linkedin" id="logoRS"></a>
         </div> 
-
-
     </nav>
-
 </footer>
 </html>

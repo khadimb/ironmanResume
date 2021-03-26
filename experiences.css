@@ -73,7 +73,7 @@ h1 {
     margin-right: 230px;
     position: -webkit-sticky;
     position: sticky;
-    top: 800px;
+    top: 1000px;
     z-index: 1;
     padding: 0px;
 }
@@ -90,7 +90,7 @@ h1 {
 }
 
 .date {    
-    opacity: 60%;
+    opacity: 0.5;
     font-size: 8em;
     grid-column: 1;
     grid-row: 1;
@@ -100,6 +100,8 @@ h1 {
     color: var(--secondaryBlue);
     border: var(--primaryBlue) solid 2px;
     width: 100%;
+    font-family: var(--font-family-text);
+    font-weight: 300;
 }
 
 .titrefilm { 
@@ -242,6 +244,7 @@ footer {
         border-radius: 0px;
         font-size: 13pt;
         text-align: left;
+        font-weight: 300;
     }
     .titrefilm {
         border-radius: 0px;

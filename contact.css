@@ -13,42 +13,97 @@
 
 }
 
+* {
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
 h1{
     color: var(--secondaryBlue);
-    padding: 16px;
+    padding: 30px;
     font-family: var(--font-family-title);
     font-weight: var(--font-weight);
+    opacity: 0.5;
+    padding-top: 80px;
     
 }
 
 body {
     background-image: url("Images/jarvis.jpg");
     color : var(--light);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    opacity: 0.5;
+  }
 
+.topnav a {
+    float: left;
+    color: var(--secondaryBlue);
+    text-align: center;
+    padding: 12px 12px 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--font-family-text);
+    font-weight: 300;
+  }
+
+.topnav a:hover {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
+
+.topnav a.active {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
+
+.topnav .icon {
+    display: none;
+  }
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: var(--secondaryBlue);
+    margin: 4px 0;
+}
 .container{
     padding-top: 16px;
     color: var(--light);
     font-family: var(--font-size-text);
     height: 640px;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    margin-top: 90px;
 }
 
 
-.tony-background {
+/**.tony-background {
     border-radius: 3px;
     margin-bottom: 30px;
     width: 50%;
     border: var(--secondaryBlue) 4px solid;
     transform: scale(1, 1);
-    transition : transform 1s;
+   transition : transform 1s;
     transition-delay: 2s;
+}**/
+
+.tony-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .background-tony {
-    width: 100%;
-    height: 100%;
-     object-fit: cover;
+    object-fit: scale-down;
+    border: var(--secondaryBlue) 2px solid;
 }
 
 
@@ -113,8 +168,9 @@ textarea {
 
 .contact-ironman {
     background-color:#baf0fb21 ;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     padding-right: 16px;
+    margin-top: 80px;
 
 
 }
@@ -175,11 +231,56 @@ button{
     width: 100px;
 
 }
+footer {
+    background-color:var(--secondaryBlue);
+    opacity: 0.5;
+}
 
+.navfooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#starkindustry{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    height: 30px;
+    width: auto;
+}
+
+.items {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+#logoRS{
+    width: 20px;
+    height: 20px;
+    margin: var(--spacing);
+}
+.logofacebook{
+    width: auto;
+    height: 20px;
+    margin: var(--spacing);
+}
 
 @media screen and (max-width: 800px){
 
+    body {
+        background-color: black;
+        background-image: none;
+    }
 
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 38pt;
+        padding: 20px;
+    }
     
     .container{
         padding-top: 30%;
@@ -201,7 +302,7 @@ button{
     .background-tony {
         width: 100%;
         height: 100%;
-         object-fit: cover;
+    object-fit: fill;
     }
 
 
@@ -246,6 +347,46 @@ button{
 
 }
 
+@media screen and (max-width: 600px) {
+    .topnavindex{
+        display: none; 
+    }
+    
+    .topnav a:not(:first-child) {
+          display: none;
+      }
+  
+    .topnav a:hover {
+          background-color: transparent;
+        }
+  
+    .topnav a.icon {
+          float: right;
+          display: block;
+      }
+    .topnav.responsive {
+        position: relative;
+      }
+  
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+  
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: var(--secondaryBlue);
+  
+      }
+    .topnav a.active {
+        background-color:var(--secondaryBlue);
+        color: black;
+      }
+    }
+}
 
 @media screen and (max-width: 450px){
 
@@ -265,11 +406,6 @@ button{
         border-radius: 3px;
         width: 90%;
         border: var(--secondaryBlue) 4px solid;
-    }
-    .background-tony {
-        width: 100%;
-        height: 100%;
-         object-fit: cover;
     }
 
 

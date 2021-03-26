@@ -71,7 +71,7 @@ footer {
     position: top;
     box-sizing: border-box;
     color: var(--secondaryBlue);
-    opacity: 0.8;
+    opacity: 0.5;
     letter-spacing: 0.02em;
     text-transform: uppercase;   
     user-select: none;
@@ -84,7 +84,7 @@ footer {
     text-align: center;
     padding: 8px;
     color: var(--secondaryBlue);
-    opacity: 0.8;
+    opacity: 0.5;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     user-select: none;
@@ -307,6 +307,7 @@ body {
     border: none;
     margin-left: 20px;  
     text-decoration: none;
+
 }
 .items {
     display: flex;
@@ -380,6 +381,10 @@ body {
     .flag{
         display: flex;
     }
+    .pageTitle {
+      font-size: 3.2em;
+    }
+    
     body {
         margin: 0;
         background-color: black;
@@ -387,7 +392,6 @@ body {
     .bodyback{
       background-image: url(images/gifresponsive.gif);
     }
-
     .bodyback .firstquote{
       color: white;
       opacity: 0.7;

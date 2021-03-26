@@ -102,9 +102,9 @@ footer {
     margin: var(--spacing);
 }
 
-#principalSkills {
+/**#principalSkills {
     padding: 60px;
-}
+}**/
 
 #principalSkills h1.title {
     margin-bottom: 50px;
@@ -113,14 +113,21 @@ footer {
 h1 {
     font-family: var(--font-family-title);
     font-size: 38pt;
+    color: var(--secondaryBlue);
+    padding-left: 10px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    /**font-family: var(--font-family-title);
+    font-size: 38pt;
     margin: var(--spacing);
 
 }
 h1.title {
     text-transform: uppercase;
-    color: var(--primaryBlue);
+    color: var(--secondaryBlue);
     display: flex;
-    justify-content: center;
+    justify-content: center;**/
 }
 
 div {
@@ -138,14 +145,16 @@ h2 {
     font-family: var(--font-family-title);
     font-size: 28pt;
     margin: var(--spacing);
-    color: var(--primaryBlue);
+    color: var(--secondaryBlue);
+    margin-bottom: 100px;
+    opacity: 0.5;
 }
 
 .skill-unique {
     width: 100%;
     display: grid;
     margin-bottom: 25px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .skill-title {
@@ -154,7 +163,6 @@ h2 {
     color: var(--light);
     font-size: 20pt;
     font-family: var(--font-family-text);
-    padding: 8px;
     font-weight: var(--font-weight);
 }
 
