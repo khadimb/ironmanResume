@@ -424,13 +424,12 @@ body {
     .topnav.responsive a {
       float: none;
       display: block;
-      text-align: left;
-      color: var(--secondaryBlue);
-
+      text-align:var(--secondaryBlue);
+      color: var();
     }
     .topnav a.active {
-      background-color:var(--secondaryBlue);
-      color: black;
+      background-color: transparent;
+      color: var(--secondaryBlue);
     }
 
     #telephone{
@@ -462,5 +461,6 @@ body {
       font-size: 1em;
       text-align: right;
     }
+   
   }
  
