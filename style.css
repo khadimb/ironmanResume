@@ -1,245 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 :root {
-    --primaryRed : #aa0505;  
-    --primaryYellow : #fbca03;
-    --font-family-title: 'Lobster', cursive;
+    --primaryBlue : #4a8a94;
+    --secondaryBlue: #baf0fb;
+    --font-family-title: 'Anton', sans-serif;
     --font-family-text: 'Roboto', sans-serif;
-    --dark : #030000;
-    --light : #fcfbf7; 
-    --secondaryRed: #4b0908;
-    --secondaryYellow: #b97d10;
+    --light : #fff;
     --spacing: 8px;
     --font-size-text: 14pt;
-  
+    --font-weight : 100;
 
-* {
+}
+
+*{
     margin: 0px;
 }
-
-h1 {
-    font-family: var(--font-family-title);
-    font-size: 38pt;
-    text-shadow: #030000 2px 5px;
-    margin: var(--spacing);
+html, body{
+    height: 100%;
+}
+.bodyback{
+    background-image: url(images/ironmanLanding.gif);
+    background-size: 100% 100%;
+    
 }
 
-h2 {
-    font-family: var(--font-family-title);
-    font-size: 28pt;
-    text-shadow: #030000 2px 5px;
-    margin: var(--spacing);
-}
 
 footer {
-    background-color: var(--secondaryYellow);
-    border-top: solid var(--dark) 5px;
+    background-color:var(--secondaryBlue);
+    opacity: 0.5;
+}
+.navfooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#starkindustry{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    height: 30px;
+    width: auto;
 }
 
-span {
-    display: bloc;
-    position: absolute;
-    left: -1000%;
-    padding: 3px;
-    color: var(--dark);
-    background-color: var(--light);
-    border: solid var(--dark) 4px;
-    text-align: center;
-    border-radius: 10px;
-    font-family: var(--font-family-text);
-    font-size: 20pt;
-}
-
-.Experiences {
-    font-style: var(--font-family-text);
-    color: var(--light);
-}
-
-.logo {
-    height: 50px;
-    object-position: left top;
-
-}
-
-
-.ironmanindex{
-    max-width: 100%;
-    max-height: 100%;
-}
-.tabHobbies{
+.hobbies {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around; 
-}
+    max-width: 40em;
+    margin: auto;
+    padding-bottom: 1em;
+  }
+  
+  .hobbies > * {
+    background: transparent;
+    border:var(--primaryBlue) solid 1px;
+    padding: 1em;
+    flex: auto;
+    margin: 0.3em;
+    text-align: center;
+    color: var(--secondaryBlue);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight)
+  }
 
-
-.hobbies{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:10px;
-    width: 150px;
-    background:var(--light);
-    color: var(--secondaryRed);
-    height:150px;
-    text-align:center;
-    font-style: var(--font-family-text);
-    border-radius: 150px;
-    box-shadow: 3px 3px 3px var(--dark);
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 18pt;
-}
-
-
-#mechanical:hover{
-    color: var(--light);
-    background-color: var(--dark);
-    box-shadow: 3px 3px 3px var(--light);
-}
-    
-
-h3{
-    font-size: 20pt;
-    font-family: var(--font-family-title);
-
-}
 .pageTitle { 
-    padding: 10px;
-}
+    padding-bottom: 0.5em;
+    position: top;
+    box-sizing: border-box;
+    color: var(--secondaryBlue);
+    opacity: 0.8;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;   
+    user-select: none;
+    white-space: wrap;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: var(--font-family-title);
+  }
 .boxTitle{
     text-align: center;
     padding: 8px;
-    text-shadow: #030000 2px 5px;
+    color: var(--secondaryBlue);
+    opacity: 0.8;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    user-select: none;
+    white-space: nowrap;
+    font-size: 3em;
+    font-family: var(--font-family-title);
+    padding-top: 0.5em;
 }
-
 .boxTab{
-    width: 50%;
-    border: solid var(--light) 10px;
-    padding: 5px;
-    background-color: var(--light);
-    margin: 8px;
-    color: var(--secondaryRed);
-    box-shadow: 3px 3px 3px var(--dark);
-    margin-left: auto;
-    margin-right: auto ;
-    border-radius: 3px;
-    display: flex;  
-    justify-content: space-around;
-    align-items: center;
-    font-style: oblique;
-    font-weight: bold;
-    text-decoration: none;
+  padding-bottom: 1em;
 }
 
-.address{
-    text-align: center;
-    text-decoration: none;
-    color: var(--secondaryRed);
-    padding: 2px;
-}
-.flag{ 
-    width: 8vw;
-    height: 10vh;
-}
-.flagname{
-    display: flex;
-    justify-content: center;
-}
-figure{
-    display: inline-block;
-}
-.gifironman{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
-    border-bottom: solid var(--dark) 5px;
-}
-
-header {
-    background-color: var(--secondaryYellow);
-    display: flex;
-    border-bottom: solid var(--dark) 5px;
-    top: 0;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-
-body {
-    background-color: var(--secondaryRed);
-    color : var(--light);
-
-}
-
-.container{
-    padding-top: 16px;
-    color: var(--light);
-    font-family: var(--font-family-text);
-    height: 640px;
-    display: flex;
-    justify-content: space-around
-}
-
-.tony-background {
-    border-radius: 3px;
-    width: 866.6px;
-}
-.background-tony {
-    width: 866.6px;
-    height: 640px;
-     object-fit: cover;
-     object-position: top;
-     border-radius: 3px;
-}
-
-.contact-ironman {
-    border-radius: 3px;
-    background-color: var(--light);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 45%;
-    padding-left: 8px;
-}
-
-.tony-stark-or-ironman {
-    display: flex;
-    justify-content: space-between;
-    color: var(--dark);
-    margin-right: 5px;
-}
-
-.formular {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 98%;
-    height: 600px;
-    padding-left: 8px;
-    color: var(--dark);
-}
-
-.submit {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-}
-
-
-body {
-    background-color: var(--dark);
-
-.Experiences {
-    font-style: var(--font-family-text);
-    color: var(--light);
-    padding: 20px;
-}
 .logo {
     display: flex;
     justify-content: flex-start;
@@ -247,300 +104,371 @@ body {
     object-position: left top;
     margin-left: 10px;
     margin-top: 5px;
-    top: 0;
-
-    
+    top: 0; 
 }
 
-.ExperiencesIronMan {
+.flagbox {
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
-    font-size: var(--font-size-text);
+    max-width: 40em;
+    margin: auto;
+    padding-bottom: 1em;
 }
-
-.ExperiencesTonyStark {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-    font-size: var(--font-size-text);
-}
-
-.Border {
-    margin: 80px;
-}
-
-
-
-
-.GIFsnap {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
-
-.snap {
-    width: 100%;
-}
-
-.cercledate {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bulle {
-    height: 80px;
-    width: 80px;
-    background-color: var(--secondaryYellow);
-    border-radius: 50%;
-    border: 5px solid var(--dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark);
-    font-size: 17pt;
-    font-style: oblique;
-    font-weight: bold;
-    overflow: hidden;
-}
- .bulle p {
+  
+  .flagbox > * {
+    background: transparent;
+    border:var(--primaryBlue) solid 1px;
+    padding: 1em;
+    flex: auto;
+    margin: 0.3em;
+    text-align: center;
+    color: var(--secondaryBlue);
+    font-size: 1.5em;
+    text-decoration: none;
     font-family: var(--font-family-text);
-    font-weight: bold;
-    font-style: normal;
- }
-
-.bulle:hover .TonyStarkExp {
-    left: 10vw;
-    right: 60vw;
+    font-weight: var(--font-weight)
 }
 
-/**.bulleDroite {
-    height: 100px;
-    width: 100px;
-    background-color: var(--secondaryYellow);
-    border-radius: 50%;
-    border: 5px solid var(--dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark);
-    font-size: 17pt;
-    font-style: oblique;
-    font-weight: bold;
+  #spanish:hover{
+    background-image: url(images/flag\ spain.png);
+    background-size: 72%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #russia:hover{
+    background-image: url(images/flagrussia.png);
+    background-size: 72%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #english:hover{
+    background-image: url(images/flag\ USA.png);
+    background-size: 100%;
+    background-position: initial;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #france:hover{
+    background-image: url(images/flag\ france.png);
+    background-size: 100%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #italy:hover{
+    background-image: url(images/flag\ italy.png);
+    background-size: 100%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+  #asgardian:hover{
+    background-image: url(images/flag\ asgardia.png);
+    background-size: 72%;
+    background-position: center;
+    color: transparent;
+    opacity: 0.6;
+  }
+
+
+.gifironman{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.indexheader{
+    background-color: transparent;
+    position:fixed;
+}
+
+body {
+    background-image: url("background0.jpg");
+    color : var(--secondaryBlue);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.topnav {
+    background-color: transparent;
     overflow: hidden;
-}**/
+    opacity: 0.5;
+  }
+  
+  .topnav a {
+    float: left;
+    color: var(--secondaryBlue);
+    text-align: center;
+    padding: 12px 12px 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--font-family-text);
+    font-weight: 300;
+  }
+  
+  .topnav a:hover {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
+  .topnav a.active {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
 
-.bulle:hover .IronManExp {
-    left: 60vw;
-    right: 10vw;
-}
+  .topnav .icon {
+    display: none;
+  }
 
-.name {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: var(--secondaryBlue);
+    margin: 4px 0;
 }
+  
+  .topnavindex {
+    background-color:transparent;
+    overflow: hidden;
+    opacity: 0.5;
+  }
+  
+  .topnavindex a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px 12px 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--font-family-text);
+  }
+  
+  .topnavindex a:hover {
+    background-color:var(--light);
+    color: black;
+  }
+  .topnavindex a.active {
+    background-color:var(--light);
+    color: black;
+  }
 
-.navitems {
+  .bodyback .firstquote{
+    color: black;
+    text-transform: uppercase;
+    opacity: 0.5;
     display: flex;
-    
-    justify-content: right;
-    align-items: flex-end;
-    padding-left: 150px;
-    margin-top: 0px;
-    margin-left: 200px;
-}
-nav{ 
-    display: flex;
-    
     justify-content: flex-end;
-    padding: 1px;
-}
-
-.aboutmeBar{
-    padding: 5px;
-    text-decoration: none;
-    border-right: 1px solid var(--dark);
-    color: var(--dark);
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 18pt;
-}
-
-.experiencesBar{
-    padding: 5px;
-    border-right: 1px solid var(--dark);
-    text-decoration: none;
-    color: var(--dark);
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 18pt;
-}
-.skillsBar:hover{
-    background-color: var(--secondaryRed);
-    color: var(--light);
-}
+    text-align: center;
+    margin-right: 0.5em;
+  }
+ 
+  .logo{
+    height: 8vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+  }
 .skillsBar{
     padding: 5px;
-    border-right: 1px solid var(--dark);
     text-decoration: none;
     color: var(--dark);
-    font-style: oblique;
     font-weight: bold;
     font-size: 18pt;
+    color: black;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    filter: blur(0.007em);
 }
 .contactBar{
     padding: 5px;  
-    border-right: 1px solid var(--dark);
     text-decoration: none;
     color: var(--dark);
-    font-style: oblique;
     font-weight: bold;
     font-size: 18pt;
+    color:black;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.007em);
 }
 .firstquote{
-    font-size: 50px;
+    font-size: 60px;
     color: var(--dark);
     font-family: var(--font-family-title);
-    text-shadow: var(--light) 2px 3px;
+    border: none;
     margin-left: 20px;  
     text-decoration: none;
 }
 .items {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;   
     padding: 15px;
 }
 
-@media screen and (max-width:500px){
-    #items {
-        display: none;
-    }
+#logoRS{
+    width: 20px;
+    height: 20px;
+  }
+.logofacebook{
+    width: auto;
+    height: 20px;
+    margin: var(--spacing);
+} 
+
+.coordonnees {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40em;
+    margin: auto;
+  }
+  
+  .coordonnees > * {
+    background: transparent;
+    border:var(--primaryBlue) solid 1px;
+    padding: 1em;
+    flex: auto;
+    margin: 0.3em;
+    text-align: center;
+    color: var(--secondaryBlue);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: none;
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight);
+  }
+
+ #telephone{
+    background-image: url(images/telephone.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: var(--secondaryBlue);
+    text-align: right;
+    background-position-x: 3%;
+  }
+  #email{
+    background-image: url(images/email.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: var(--secondaryBlue);
+    background-position-x: 3% ;
+  }
+  #address{
+    background-image: url(images/address.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: var(--secondaryBlue);
+    background-position-x: 3%;
+  }
+ 
+  .close{
+    display: none;
+  }
+
+  @media screen and (max-width:600px){
     .flag{
         display: flex;
     }
+    body {
+        margin: 0;
+        background-color: black;
+    }
+    .bodyback{
+      background-image: url(images/gifresponsive.gif);
+    }
 
+    .bodyback .firstquote{
+      color: white;
+      opacity: 0.7;
+      text-transform: uppercase;
+      display: flex;
+      text-align: center;
+      margin-right: 0.5em;
+      font-size: 2em;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .firstquote{
+      position: bottom;
+      height: 100%;
+    }
 
-}
+    .topnavindex{
+      display: none;
+    }
+      .topnav a:not(:first-child) {
+        display: none;
+    }
 
+    .topnav a:hover {
+        background-color: transparent;
+      }
 
-.skills {
-    margin-bottom: 50px;
-}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+      position: relative;
+    }
 
-.skillsProgress {
-    margin: var(--spacing);
-}
-* {
-    margin: 0px;
-    box-sizing: border-box;
-}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
 
-#principalSkills {
-    padding: 60px;
-}
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align:var(--secondaryBlue);
+      color: var();
+    }
+    .topnav a.active {
+      background-color: transparent;
+      color: var(--secondaryBlue);
+    }
 
-#principalSkills h1.title {
-    margin-bottom: 50px;
-}
-
-h1 {
-    font-family: var(--font-family-title);
-    font-size: 38pt;
-    text-shadow: #030000 2px 5px;
-    margin: var(--spacing);
-
-}
-h1.title {
-    text-transform: uppercase;
-    color: var(--light);
-}
-
-div {
-    display: block;
-    
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    justify-content: space-around;
-}
-
-h2 {
-    font-family: var(--font-family-title);
-    font-size: 28pt;
-    text-shadow: #030000 2px 5px;
-    margin: var(--spacing);
-    color: var(--light);
-}
-
-.skill-unique {
-    width: 100%;
-    display: grid;
-    margin-bottom: 25px;
-    padding: 20px;
-}
-
-.skill-title {
-    width: auto;
-    float: left;
-    color: var(--light);
-    font-size: 20pt;
-    font-family: var(--font-family-text);
-    padding: 8px;
-}
-
-.progress {
-    width: 700px;
-    margin-top: .3rem;
-    display: flex;
-    height: 1rem;
-    overflow: hidden;
-    font-size: .75rem;
-    background-color: var(--light);
-    border-radius: .25rem;
-}
-
-element.style {
-    width: 100%;
-}
-
-
-@keyframes auto-progress {
-  0% {
-    width: 0%;
+    #telephone{
+      background-image: url(images/telephone.png);
+      background-size: 15%;
+      background-repeat: no-repeat;
+      background-position: left;
+      color: var(--secondaryBlue);
+      background-position-x: 3%;
+      text-align: center;
+    }
+    #email{
+      background-image: url(images/email.png);
+      background-size: 10%;
+      background-repeat: no-repeat;
+      background-position: left;
+      color: var(--secondaryBlue);
+      background-position-x: 3% ;
+      text-align: right;
+      font-size: 1em;
+    }
+    #address{
+      background-image: url(images/address.png);
+      background-size: 10%;
+      background-repeat: no-repeat;
+      background-position: left;
+      color: var(--secondaryBlue);
+      background-position-x: 3%;
+      font-size: 1em;
+      text-align: right;
+    }
+   
   }
-
-
-  100% {
-    width: 100%;
-  }
-}
-
-.progress-bar {
-    background-color: #1a1a1a;
-    height: 20px;
-    width: 700px;
-    margin: 50px auto;
-    border-radius: 5px;
-}
-
-.progress-bar-inner {
-  display: block;
-  height: 20px;
-  width: 100%;
-  background-color: #55c1da;
-  border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
-  position: relative;
-  animation: auto-progress 6s ease;
-  text-align: right;
-  text-decoration-color:var(--light) ;
-}
-
+ 
