@@ -250,7 +250,7 @@ footer {
         border-radius: 0px;
     }
     #scrolltop {
-        top: 800px;
+        top: 650px;
     }
     .topnavindex{
         display: none; 
@@ -297,6 +297,6 @@ footer {
     }
     
     #scrolltop {
-        top: 800px;
+        top: 600px;
     }
 }
