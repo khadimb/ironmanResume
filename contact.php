@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
               class="background-tony"
             />
         </div>
-        <form class ="contact-ironman"  method = "POST" novalidate>
+        <form class ="contact-ironman"  method = "POST">
             <?php if (!empty($errors)) : ?>
                 <ul class = 'errors'>
                     <?php foreach($errors as $error) : ?>

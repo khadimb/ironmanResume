@@ -132,7 +132,7 @@ textarea {
 
 .errors {
     background-color: #baf0fb50;
-    color: rgb(27, 28, 41);
+    color: var(--secondaryBlue);
     font-weight: bold;
     list-style: none;
     font-family: var(--font-size-text);
@@ -179,8 +179,10 @@ button{
 
 @media screen and (max-width: 800px){
 
+
+    
     .container{
-        padding-top: 25%;
+        padding-top: 30%;
         color: var(--light);
         font-family: var(--font-family-text);
         height: 640px;
@@ -188,6 +190,7 @@ button{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        margin-top: 15%;
     }
 
     .tony-background {
@@ -235,12 +238,19 @@ button{
         color: var(--secondaryBlue);
     }
 
+    .navfooter {
+        margin-top: 45%;
+        width: 100%;
+    }
+
+
 }
 
 
 @media screen and (max-width: 450px){
 
     .container{
+        margin-top: 40%;
         padding-top: 16px;
         color: var(--light);
         font-family: var(--font-family-text);
@@ -287,12 +297,35 @@ button{
         flex-direction: column;
         justify-content: space-around;
         width: 98%;
-        height: 600px;
+        height: 450px;
         margin-bottom: 20%;
         color: var(--secondaryBlue);
     }
 
+    #first-name{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+
+    #last-name{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+
+    #email{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+
+    #message{
+        margin-top: 16px;        
+    }
+
     .submit {
+        margin-top: 15%;
         display: flex;
         justify-content: center;
         height: 70px;
@@ -303,10 +336,14 @@ button{
         display: none;
     }
 
-    footer {
+    .navfooter {
+        margin-top: 30%;
         width: 100%;
-        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-
+    .items {
+        margin: 0px;
+    }
 }
