@@ -97,6 +97,15 @@ footer {
   padding-bottom: 1em;
 }
 
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    object-position: left top;
+    margin-left: 10px;
+    margin-top: 5px;
+    top: 0; 
+}
 
 .flagbox {
     display: flex;
@@ -308,8 +317,7 @@ body {
 #logoRS{
     width: 20px;
     height: 20px;
-    margin: var(--spacing);
-}
+  }
 .logofacebook{
     width: auto;
     height: 20px;
