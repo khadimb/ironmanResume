@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Man Résumé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="index.html">Home</a>
+              <a href="about.html">About Me</a>
+              <a href="experiences.html">Experiences</a>
+              <a href="skills.html">Skills</a>
+              <a href="contact.php">Contact Me</a>
+              <a href="#myTopnav" class="icon" onclick="myFunction()">
+                <div class="menuBurger">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <i class="fa fa-bars"></i>
+                </div>
+            </a>
+          </div> 
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          } </script>
+
+    </header>
+    
+   <!-- <img class="ironmanindex"src="images/ironmanindex.jpg" alt="ironman">-->
+
+<body class="backgroundabout">
+    <h2 class="pageTitle">"I am a Genius Billionaire <br> Playboy Philanthropist"</h2>
+    
+    <h3 class="boxTitle">Coordinates</h3>
+
+    <section class="boxTab">
+        
+            <div class="coordonnees">
+                <a id="tonyname">Anthony Edward Stark</a>
+                <a id="telephone" href="tel:+12135096995">+12135096995</a> 
+                <a id="email" href="mailto:iamironman@starkindustry.com">iamironman@starkindustry.com</a>
+                <a id="email" href="mailto:iamtonystark@starkindustry.com">iamtonystark@starkindustry.com</a>
+                <a id="address">Villa Tony Stark Malibu, Californie</a>
+            </div>
+    </section>
+
+    <h3 class="boxTitle">Languages</h3>
+    <div class="flagbox">
+
+
+        <p id="english" class="#">ENGLISH </p>
+        <p id="asgardian" class="#">ASGARDIAN</p>
+        <p id="france" class="#">FRENCH</p>
+        <p id="italy" class="#">ITALIAN</p>
+        <p id="spanish" class="#">SPANISH</p>
+        <p id="russia" class="#">RUSSIAN</p>
+    
+    </div>
+    
+        
+
+    <h3 class="boxTitle">Hobbies</h3>
+    <div class="hobbies">
+      
+        
+            <p class="#">Mechanical</p>
+            <p class="#">Cars</p>
+            <p class="#">New Technologies</p>
+            <p class="#">Invent</p>
+            <p class="#">Sport Mechanical</p>
+            <p class="#">Against saying Captain America</p>
+            <p class="#">Save the World</p>
+        
+    </div>
+    
+</body>
+     <footer>
+        <nav class="navfooter">
+            <img src="images/Stark_Industries.png" alt="starkindustry" id="starkindustry"> 
+        <div class="items" id="items">
+            <a href="https://fr-fr.facebook.com/profile.php?id=100005833570349"><img src="Images/Facebook.png" alt="Logo Facebook" class="logofacebook" ></a>
+            <a href="https://twitter.com/TheStarkOne"><img src="Images/Twitter.png" alt="Logo Twitter" class="logo twitter" id="logoRS"></a>
+            <a href="https://www.instagram.com/ironman.official/"><img src="Images/Instagram.png" alt="Logo Instagram" class="logo instagram" id="logoRS"></a>
+            <a href="https://www.linkedin.com/in/tony-stark-37599389"><img src="Images/Linkedin.png" alt="Logo Linkedin" class="logo linkedin" id="logoRS"></a>
+            </div> 
+            
+                
+        </nav>
+        
+    </footer>
+</html>

@@ -1,0 +1,36 @@
+footer {
+    margin-top: 2%;
+    background-color:var(--secondaryBlue);
+    opacity: 0.5;
+}
+.navfooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#starkindustry{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    height: 30px;
+    width: auto;
+}
+.items {
+    margin: 32px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+
+
+#logoRS{
+    margin: 8px;
+    width: 20px;
+    height: 20px;
+}
+.logofacebook{
+    margin: 8px;
+    width: auto;
+    height: 20px;
+}

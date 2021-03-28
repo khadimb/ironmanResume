@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap%27');
+:root {
+    --primaryBlue : #4a8a94;
+    --secondaryBlue: #baf0fb;
+    --font-family-title: 'Anton', sans-serif;
+    --font-family-text: 'Roboto', sans-serif;
+    --light : #fff;
+    --spacing: 8px;
+    --font-size-text: 14pt;
+    --font-weight : 100;
+
+}
+
+* {
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1{
+    color: var(--secondaryBlue);
+    padding: 30px;
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight);
+    opacity: 0.5;
+    padding-top: 80px;
+    
+}
+
+body {
+    background-image: url("Images/jarvis.jpg");
+    color : var(--light);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    opacity: 0.5;
+  }
+
+.topnav a {
+    float: left;
+    color: var(--secondaryBlue);
+    text-align: center;
+    padding: 12px 12px 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--font-family-text);
+    font-weight: 300;
+  }
+
+.topnav a:hover {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
+
+.topnav a.active {
+    background-color:var(--secondaryBlue);
+    color: black;
+  }
+
+.topnav .icon {
+    display: none;
+  }
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: var(--secondaryBlue);
+    margin: 4px 0;
+}
+.container{
+    padding-top: 16px;
+    color: var(--light);
+    font-family: var(--font-size-text);
+    height: 640px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+
+/**.tony-background {
+    border-radius: 3px;
+    margin-bottom: 30px;
+    width: 50%;
+    border: var(--secondaryBlue) 4px solid;
+    transform: scale(1, 1);
+   transition : transform 1s;
+    transition-delay: 2s;
+}**/
+
+.tony-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-tony {
+    object-fit: scale-down;
+    border: var(--secondaryBlue) 2px solid;
+}
+
+
+.contact-ironman {
+    color: var(--secondaryBlue);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    padding-left: 8px;
+}
+
+.choose-your-guy {
+    padding-top: 8px;
+    padding: 8px;
+    width: 100%;
+}
+
+.choose{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+input:hover{
+    filter: brightness(200%);
+    
+}
+
+input {
+    transition: 0.4s;
+    background-color: var(--noir);
+    color: var(--secondaryBlue);
+    border: var(--primaryBlue) 2px solid;
+    height: 7%;
+}
+
+textarea:hover{
+    filter: brightness(200%);
+    
+}
+
+textarea {
+    transition: 0.4s;
+    background-color: var(--noir);
+    color: var(--secondaryBlue);
+    border: var(--primaryBlue) 2px solid;
+    width: 99%;
+    height: 20%;
+}
+
+.tony-stark-or-ironman {
+    display: flex;
+    justify-content: space-between;
+    color: var(--secondaryBlue);
+    margin-right: 5px;
+    padding: 25px;
+    border: var(--primaryBlue) solid;
+
+}
+
+.contact-ironman {
+    background-color:#baf0fb21 ;
+    margin-bottom: 60px;
+    padding-right: 16px;
+    margin-top: 80px;
+
+
+}
+
+.formular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 98%;
+    height: 600px;
+    padding-left: 8px;
+    padding-top: 16px;
+    color: var(--secondaryBlue);
+}
+
+.errors {
+    background-color: #baf0fb50;
+    color: var(--secondaryBlue);
+    font-weight: bold;
+    list-style: none;
+    font-family: var(--font-size-text);
+    padding: 12px;
+    padding-inline: 20px;
+    line-height: 150%;
+    letter-spacing: 1.5px;
+}
+
+.buttonSubmit:hover{
+    filter: brightness(200%);
+    }
+
+.buttonPrint:hover{
+    filter: brightness(200%);
+    }
+
+.buttonSubmit:active{
+    filter: brightness(50%);
+    }
+    
+.buttonPrint:active{
+    filter: brightness(50%);
+    }
+.submit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    padding-top: 16px;
+    margin-bottom: 20px;
+}
+
+button{
+    font-family: var(--font-size-text);
+    color: var(--secondaryBlue);
+    background-color: #122325d5;
+    border:var(--primaryBlue) 2px solid;
+    height: 60px;
+    width: 100px;
+
+}
+footer {
+    background-color:var(--secondaryBlue);
+    opacity: 0.5;
+}
+
+.navfooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#starkindustry{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    height: 30px;
+    width: auto;
+}
+
+.items {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+#logoRS{
+    width: 20px;
+    height: 20px;
+    margin: var(--spacing);
+}
+.logofacebook{
+    width: auto;
+    height: 20px;
+    margin: var(--spacing);
+}
+
+@media screen and (max-width: 800px){
+
+    body {
+        background-color: black;
+        background-image: none;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 38pt;
+        padding: 20px;
+    }
+    
+    .container{
+        padding-top: 30%;
+        color: var(--light);
+        font-family: var(--font-family-text);
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 15%;
+    }
+
+    .tony-background {
+        width: 95%;
+        border: var(--secondaryBlue) 4px solid;
+        margin: 16px;
+    }
+    .background-tony {
+        width: 100%;
+        height: 100%;
+    object-fit: fill;
+    }
+
+
+    .contact-ironman {
+        border-radius: 3px;
+        background-color: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        padding-left: 8px;
+        padding-top: 16px;
+    }
+    
+    .tony-stark-or-ironman {
+        display: flex;
+        justify-content: space-between;
+        color: var(--secondaryBlue);
+        margin-right: 3px;
+        padding: 15px;
+        border: var(--primaryBlue) solid;
+        width: 100%;
+    
+    }
+    
+    .formular {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 98%;
+        height: 600px;
+        padding-left: 8px;
+        padding-top: 16px;
+        color: var(--secondaryBlue);
+    }
+
+    .navfooter {
+        margin-top: 45%;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .topnavindex{
+        display: none; 
+    }
+    
+    .topnav a:not(:first-child) {
+          display: none;
+      }
+  
+    .topnav a:hover {
+          background-color: transparent;
+        }
+  
+    .topnav a.icon {
+          float: right;
+          display: block;
+      }
+    .topnav.responsive {
+        position: relative;
+      }
+  
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+  
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: var(--secondaryBlue);
+  
+      }
+    .topnav a.active {
+        background-color:var(--secondaryBlue);
+        color: black;
+      }
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .container{
+        margin-top: 40%;
+        padding-top: 16px;
+        color: var(--light);
+        font-family: var(--font-family-text);
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .tony-background {
+        border-radius: 3px;
+        width: 90%;
+        border: var(--secondaryBlue) 4px solid;
+    }
+
+
+    .contact-ironman {
+        border-radius: 3px;
+        background-color: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 8px;
+    }
+    
+    .tony-stark-or-ironman {
+        display: flex;
+        justify-content: space-between;
+        color: var(--secondaryBlue);
+        margin-right: 3px;
+        padding: 15px;
+        border: var(--primaryBlue) solid;    
+    }
+    
+    .formular {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 98%;
+        height: 450px;
+        margin-bottom: 20%;
+        color: var(--secondaryBlue);
+    }
+
+    #first-name{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+
+    #last-name{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+
+    #email{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+
+    #message{
+        margin-top: 16px;        
+    }
+
+    .submit {
+        margin-top: 15%;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        padding-top: 16px;
+    }
+
+    .buttonPrint{
+        display: none;
+    }
+
+    .navfooter {
+        margin-top: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .items {
+        margin: 0px;
+    }
+}
